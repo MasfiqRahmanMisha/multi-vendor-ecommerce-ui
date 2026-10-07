@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Product | MarketHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- =========================
+         MOBILE HEADER
+    ========================== -->
+    <header class="mobile-dashboard-header">
+
+        <a href="../index.html" class="logo">
+            Market<span>Hub</span>
+        </a>
+
+        <button
+            type="button"
+            class="mobile-menu-btn"
+            id="mobileSidebarToggle"
+            aria-label="Open menu"
+        >
+            <svg width="22" height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         DASHBOARD LAYOUT
+    ========================== -->
+    <div class="dashboard-layout">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../index.html" class="sidebar-logo">
+                    Market<span>Hub</span>
+                </a>
+
+
+                <div class="seller-profile">
+
+                    <div class="seller-avatar">
+                        <span>JD</span>
+                    </div>
+
+                    <div class="seller-profile-info">
+                        <strong>John Doe</strong>
+                        <span>Premium Seller</span>
+                    </div>
+
+                </div>
+
+
+                <!-- MAIN MENU -->
+                <div class="sidebar-section">
+
+                    <span class="sidebar-section-title">
+                        MAIN MENU
+                    </span>
+
+                    <nav class="sidebar-nav">
+
+                        <a href="dashboard.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                </svg>
+                            </span>
+
+                            <span>Dashboard</span>
+
+                        </a>
+
+
+                        <a href="products.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m3 7 9-4 9 4-9 4-9-4Z"></path>
+                                    <path d="m3 12 9 4 9-4"></path>
+                                    <path d="m3 17 9 4 9-4"></path>
+                                </svg>
+                            </span>
+
+                            <span>Products</span>
+
+                        </a>
+
+
+                        <a
+                            href="add-product.html"
+                            class="sidebar-link active"
+                        >
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                                </svg>
+                            </span>
+
+                            <span>Add Product</span>
+
+                        </a>
+
+
+                        <a href="orders.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M6 2h12"></path>
+                                    <path d="M6 2v5"></path>
+                                    <path d="M18 2v5"></path>
+                                    <path d="M5 7h14"></path>
+                                    <path d="M6 7v11a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V7"></path>
+                                </svg>
+                            </span>
+
+                            <span>Orders</span>
+
+                            <span class="sidebar-badge">
+                                12
+                            </span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- BUSINESS -->
+                <div class="sidebar-section">
+
+                    <span class="sidebar-section-title">
+                        BUSINESS
+                    </span>
+
+                    <nav class="sidebar-nav">
+
+                        <a href="analytics.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="4" y1="19" x2="4" y2="10"></line>
+                                    <line x1="10" y1="19" x2="10" y2="5"></line>
+                                    <line x1="16" y1="19" x2="16" y2="8"></line>
+                                    <line x1="22" y1="19" x2="22" y2="3"></line>
+                                </svg>
+                            </span>
+
+                            <span>Analytics</span>
+
+                        </a>
+
+
+                        <a href="earnings.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <path d="M15 8.5c-.7-.7-1.7-1.1-3-1.1-1.7 0-3 .9-3 2.2 0 1.4 1.3 2 3 2.4 1.7.4 3 .9 3 2.3 0 1.4-1.3 2.3-3.1 2.3-1.3 0-2.4-.4-3.2-1.2"></path>
+                                    <line x1="12" y1="6" x2="12" y2="18"></line>
+                                </svg>
+                            </span>
+
+                            <span>Earnings</span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIDEBAR BOTTOM -->
+            <div class="sidebar-bottom">
+
+                <a href="../index.html" class="sidebar-link">
+
+                    <span class="sidebar-link-icon">
+                        <svg width="19" height="19"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M3 10.5 12 3l9 7.5"></path>
+                            <path d="M5 9.5V21h14V9.5"></path>
+                            <path d="M9 21v-7h6v7"></path>
+                        </svg>
+                    </span>
+
+                    <span>Visit Store</span>
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="sidebar-link sidebar-logout"
+                    id="sellerLogoutBtn"
+                >
+
+                    <span class="sidebar-link-icon">
+                        <svg width="19" height="19"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M10 17l5-5-5-5"></path>
+                            <path d="M15 12H3"></path>
+                            <path d="M21 19V5a2 2 0 0 0-2-2h-6"></path>
+                        </svg>
+                    </span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <div
+            class="dashboard-sidebar-overlay"
+            id="dashboardSidebarOverlay"
+        ></div>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+        <main class="dashboard-main">
+
+            <!-- TOPBAR -->
+            <div class="dashboard-topbar">
+
+                <div class="dashboard-heading">
+
+                    <span class="dashboard-eyebrow">
+                        PRODUCT MANAGEMENT
+                    </span>
+
+                    <h1 id="addProductPageTitle">
+                        Add New Product
+                    </h1>
+
+                    <p>
+                        Create a new product listing for your store.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-top-actions">
+
+                    <button
+                        type="button"
+                        class="dashboard-icon-btn"
+                        id="notificationBtn"
+                        aria-label="Notifications"
+                    >
+
+                        <svg width="20" height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                            <path d="M13.7 21a2 2 0 0 1-3.4 0"></path>
+                        </svg>
+
+                        <span class="notification-dot"></span>
+
+                    </button>
+
+
+                    <a
+                        href="products.html"
+                        class="dashboard-add-btn secondary-dashboard-btn"
+                    >
+
+                        <svg width="18" height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+
+                        <span>Back to Products</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 PRODUCT FORM
+            ========================== -->
+            <form
+                id="addProductForm"
+                class="product-form-layout"
+            >
+
+                <!-- LEFT COLUMN -->
+                <div class="product-form-main">
+
+
+                    <!-- BASIC INFORMATION -->
+                    <section class="dashboard-panel form-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2>
+                                    Basic Information
+                                </h2>
+
+                                <p>
+                                    Add the essential details of your product.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- PRODUCT NAME -->
+                            <div class="form-group form-grid-full">
+
+                                <label for="productName">
+                                    Product Name
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="productName"
+                                    name="productName"
+                                    placeholder="e.g. Premium Wireless Headphones"
+                                    required
+                                >
+
+                                <small>
+                                    Use a clear and descriptive product name.
+                                </small>
+
+                            </div>
+
+
+                            <!-- CATEGORY -->
+                            <div class="form-group">
+
+                                <label for="productCategory">
+                                    Category
+                                    <span>*</span>
+                                </label>
+
+                                <select
+                                    id="productCategory"
+                                    name="category"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select category
+                                    </option>
+
+                                    <option value="electronics">
+                                        Electronics
+                                    </option>
+
+                                    <option value="fashion">
+                                        Fashion
+                                    </option>
+
+                                    <option value="home">
+                                        Home & Living
+                                    </option>
+
+                                    <option value="beauty">
+                                        Beauty
+                                    </option>
+
+                                    <option value="sports">
+                                        Sports
+                                    </option>
+
+                                    <option value="accessories">
+                                        Accessories
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- SUBCATEGORY -->
+                            <div class="form-group">
+
+                                <label for="productSubcategory">
+                                    Subcategory
+                                </label>
+
+                                <select
+                                    id="productSubcategory"
+                                    name="subcategory"
+                                >
+
+                                    <option value="">
+                                        Select subcategory
+                                    </option>
+
+                                    <option value="audio">
+                                        Audio
+                                    </option>
+
+                                    <option value="wearables">
+                                        Wearables
+                                    </option>
+
+                                    <option value="computers">
+                                        Computers
+                                    </option>
+
+                                    <option value="mobile">
+                                        Mobile Accessories
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- BRAND -->
+                            <div class="form-group">
+
+                                <label for="productBrand">
+                                    Brand
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="productBrand"
+                                    name="brand"
+                                    placeholder="e.g. MarketTech"
+                                >
+
+                            </div>
+
+
+                            <!-- SKU -->
+                            <div class="form-group">
+
+                                <label for="productSku">
+                                    SKU
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="productSku"
+                                    name="sku"
+                                    placeholder="e.g. MH-PRO-001"
+                                >
+
+                            </div>
+
+
+                            <!-- DESCRIPTION -->
+                            <div class="form-group form-grid-full">
+
+                                <label for="productDescription">
+                                    Product Description
+                                    <span>*</span>
+                                </label>
+
+                                <textarea
+                                    id="productDescription"
+                                    name="description"
+                                    rows="7"
+                                    maxlength="1200"
+                                    placeholder="Describe your product, its features, materials, specifications and benefits..."
+                                    required
+                                ></textarea>
+
+                                <div class="textarea-footer">
+
+                                    <small>
+                                        Write a detailed description to help customers understand your product.
+                                    </small>
+
+                                    <span id="descriptionCount">
+                                        0 / 1200
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- PRICING & INVENTORY -->
+                    <section class="dashboard-panel form-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2>
+                                    Pricing & Inventory
+                                </h2>
+
+                                <p>
+                                    Set your price, stock and inventory information.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- PRICE -->
+                            <div class="form-group">
+
+                                <label for="productPrice">
+                                    Selling Price
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-prefix">
+
+                                    <span>
+                                        $
+                                    </span>
+
+                                    <input
+                                        type="number"
+                                        id="productPrice"
+                                        name="price"
+                                        min="0"
+                                        step="0.01"
+                                        placeholder="0.00"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- COMPARE PRICE -->
+                            <div class="form-group">
+
+                                <label for="comparePrice">
+                                    Compare at Price
+                                </label>
+
+                                <div class="input-prefix">
+
+                                    <span>
+                                        $
+                                    </span>
+
+                                    <input
+                                        type="number"
+                                        id="comparePrice"
+                                        name="comparePrice"
+                                        min="0"
+                                        step="0.01"
+                                        placeholder="0.00"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- STOCK -->
+                            <div class="form-group">
+
+                                <label for="productStock">
+                                    Stock Quantity
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="productStock"
+                                    name="stock"
+                                    min="0"
+                                    step="1"
+                                    placeholder="0"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- LOW STOCK -->
+                            <div class="form-group">
+
+                                <label for="lowStockThreshold">
+                                    Low Stock Alert
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="lowStockThreshold"
+                                    name="lowStockThreshold"
+                                    min="0"
+                                    step="1"
+                                    value="10"
+                                    placeholder="10"
+                                >
+
+                            </div>
+
+
+                            <!-- WEIGHT -->
+                            <div class="form-group">
+
+                                <label for="productWeight">
+                                    Product Weight
+                                </label>
+
+                                <div class="input-suffix">
+
+                                    <input
+                                        type="number"
+                                        id="productWeight"
+                                        name="weight"
+                                        min="0"
+                                        step="0.01"
+                                        placeholder="0.00"
+                                    >
+
+                                    <span>
+                                        kg
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- TAX -->
+                            <div class="form-group">
+
+                                <label for="productTax">
+                                    Tax Rate
+                                </label>
+
+                                <div class="input-suffix">
+
+                                    <input
+                                        type="number"
+                                        id="productTax"
+                                        name="tax"
+                                        min="0"
+                                        max="100"
+                                        step="0.01"
+                                        value="0"
+                                        placeholder="0"
+                                    >
+
+                                    <span>
+                                        %
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- PRODUCT IMAGES -->
+                    <section class="dashboard-panel form-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2>
+                                    Product Images
+                                </h2>
+
+                                <p>
+                                    Upload high-quality images of your product.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="product-image-upload"
+                            id="productImageUpload"
+                        >
+
+                            <input
+                                type="file"
+                                id="productImages"
+                                name="images"
+                                accept="image/png,image/jpeg,image/webp"
+                                multiple
+                                hidden
+                            >
+
+
+                            <label
+                                for="productImages"
+                                class="image-upload-area"
+                            >
+
+                                <div class="image-upload-icon">
+
+                                    <svg width="28" height="28"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round">
+
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="17 8 12 3 7 8"></polyline>
+                                        <line x1="12" y1="3" x2="12" y2="15"></line>
+
+                                    </svg>
+
+                                </div>
+
+
+                                <strong>
+                                    Drop your images here
+                                </strong>
+
+                                <span>
+                                    or click to browse from your device
+                                </span>
+
+                                <small>
+                                    PNG, JPG or WEBP • Maximum 5MB per image
+                                </small>
+
+                            </label>
+
+
+                            <div
+                                class="product-image-preview-grid"
+                                id="productImagePreview"
+                            ></div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- SHIPPING -->
+                    <section class="dashboard-panel form-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2>
+                                    Shipping Information
+                                </h2>
+
+                                <p>
+                                    Configure how this product will be delivered.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- SHIPPING METHOD -->
+                            <div class="form-group">
+
+                                <label for="shippingMethod">
+                                    Shipping Method
+                                </label>
+
+                                <select
+                                    id="shippingMethod"
+                                    name="shippingMethod"
+                                >
+
+                                    <option value="standard">
+                                        Standard Delivery
+                                    </option>
+
+                                    <option value="express">
+                                        Express Delivery
+                                    </option>
+
+                                    <option value="both">
+                                        Standard + Express
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- SHIPPING COST -->
+                            <div class="form-group">
+
+                                <label for="shippingCost">
+                                    Shipping Cost
+                                </label>
+
+                                <div class="input-prefix">
+
+                                    <span>
+                                        $
+                                    </span>
+
+                                    <input
+                                        type="number"
+                                        id="shippingCost"
+                                        name="shippingCost"
+                                        min="0"
+                                        step="0.01"
+                                        value="0"
+                                        placeholder="0.00"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- FREE SHIPPING -->
+                            <div class="form-group form-grid-full">
+
+                                <label class="toggle-field">
+
+                                    <input
+                                        type="checkbox"
+                                        id="freeShipping"
+                                        name="freeShipping"
+                                    >
+
+                                    <span class="toggle-switch"></span>
+
+                                    <span class="toggle-text">
+
+                                        <strong>
+                                            Offer free shipping
+                                        </strong>
+
+                                        <small>
+                                            Customers won't be charged for shipping.
+                                        </small>
+
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- DELIVERY TIME -->
+                            <div class="form-group">
+
+                                <label for="deliveryTime">
+                                    Estimated Delivery
+                                </label>
+
+                                <select
+                                    id="deliveryTime"
+                                    name="deliveryTime"
+                                >
+
+                                    <option value="1-2">
+                                        1–2 Business Days
+                                    </option>
+
+                                    <option value="2-4" selected>
+                                        2–4 Business Days
+                                    </option>
+
+                                    <option value="4-7">
+                                        4–7 Business Days
+                                    </option>
+
+                                    <option value="7-14">
+                                        7–14 Business Days
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- RETURN POLICY -->
+                            <div class="form-group">
+
+                                <label for="returnPolicy">
+                                    Return Policy
+                                </label>
+
+                                <select
+                                    id="returnPolicy"
+                                    name="returnPolicy"
+                                >
+
+                                    <option value="7">
+                                        7 Days
+                                    </option>
+
+                                    <option value="14" selected>
+                                        14 Days
+                                    </option>
+
+                                    <option value="30">
+                                        30 Days
+                                    </option>
+
+                                    <option value="none">
+                                        No Returns
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- PRODUCT OPTIONS -->
+                    <section class="dashboard-panel form-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2>
+                                    Product Options
+                                </h2>
+
+                                <p>
+                                    Add variations such as color, size or material.
+                                </p>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="secondary-btn"
+                                id="addOptionBtn"
+                            >
+
+                                <svg width="17" height="17"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+
+                                Add Option
+
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            class="product-options-list"
+                            id="productOptionsList"
+                        >
+
+                            <div class="product-option-row">
+
+                                <div class="form-group">
+
+                                    <label>
+                                        Option Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        name="optionName[]"
+                                        placeholder="e.g. Color"
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label>
+                                        Option Values
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        name="optionValues[]"
+                                        placeholder="e.g. Black, White, Blue"
+                                    >
+
+                                </div>
+
+
+                                <button
+                                    type="button"
+                                    class="remove-option-btn"
+                                    aria-label="Remove option"
+                                    title="Remove"
+                                >
+
+                                    <svg width="17" height="17"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                        <path d="M19 6l-1 14H6L5 6"></path>
+                                    </svg>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- SEO -->
+                    <section class="dashboard-panel form-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2>
+                                    Search & SEO
+                                </h2>
+
+                                <p>
+                                    Help customers discover your product.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group form-grid-full">
+
+                                <label for="seoTitle">
+                                    SEO Title
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="seoTitle"
+                                    name="seoTitle"
+                                    maxlength="70"
+                                    placeholder="Product title for search engines"
+                                >
+
+                                <small>
+                                    Recommended: up to 60–70 characters.
+                                </small>
+
+                            </div>
+
+
+                            <div class="form-group form-grid-full">
+
+                                <label for="seoDescription">
+                                    SEO Description
+                                </label>
+
+                                <textarea
+                                    id="seoDescription"
+                                    name="seoDescription"
+                                    rows="4"
+                                    maxlength="160"
+                                    placeholder="Short description for search engine results..."
+                                ></textarea>
+
+                                <div class="textarea-footer">
+
+                                    <small>
+                                        Keep it clear and relevant.
+                                    </small>
+
+                                    <span id="seoDescriptionCount">
+                                        0 / 160
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group form-grid-full">
+
+                                <label for="productTags">
+                                    Product Tags
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="productTags"
+                                    name="tags"
+                                    placeholder="wireless, headphones, audio, bluetooth"
+                                >
+
+                                <small>
+                                    Separate multiple tags with commas.
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- RIGHT COLUMN -->
+                <aside class="product-form-sidebar">
+
+
+                    <!-- PUBLISH CARD -->
+                    <section class="dashboard-panel publish-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2>
+                                    Publish
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="publish-status">
+
+                            <span class="publish-status-dot"></span>
+
+                            <div>
+
+                                <strong>
+                                    Product Status
+                                </strong>
+
+                                <span>
+                                    Ready to publish
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="productStatus">
+                                Status
+                            </label>
+
+                            <select
+                                id="productStatus"
+                                name="status"
+                            >
+
+                                <option value="active">
+                                    Active
+                                </option>
+
+                                <option value="draft">
+                                    Draft
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="publishDate">
+                                Publish Date
+                            </label>
+
+                            <select
+                                id="publishDate"
+                                name="publishDate"
+                            >
+
+                                <option value="now">
+                                    Publish Immediately
+                                </option>
+
+                                <option value="scheduled">
+                                    Schedule for Later
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="primary-btn product-submit-btn"
+                            id="publishProductBtn"
+                        >
+
+                            <svg width="18" height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+
+                            <span>
+                                Publish Product
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="secondary-btn product-draft-btn"
+                            id="saveDraftBtn"
+                        >
+
+                            Save as Draft
+
+                        </button>
+
+                    </section>
+
+
+                    <!-- PRODUCT PREVIEW -->
+                    <section class="dashboard-panel product-preview-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h2>
+                                    Product Preview
+                                </h2>
+
+                                <p>
+                                    Customer view
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="product-live-preview">
+
+                            <div class="preview-image">
+
+                                <img
+                                    id="previewProductImage"
+                                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                                    alt="Product preview"
+                                >
+
+                                <span class="preview-badge">
+                                    New
+                                </span>
+
+                            </div>
+
+
+                            <div class="preview-content">
+
+                                <span
+                                    class="preview-category"
+                                    id="previewProductCategory"
+                                >
+                                    Electronics
+                                </span>
+
+                                <h3 id="previewProductName">
+                                    Your Product Name
+                                </h3>
+
+                                <div class="preview-rating">
+
+                                    <span>
+                                        ★★★★★
+                                    </span>
+
+                                    <small>
+                                        New product
+                                    </small>
+
+                                </div>
+
+
+                                <div class="preview-price">
+
+                                    <strong id="previewProductPrice">
+                                        $0.00
+                                    </strong>
+
+                                    <del id="previewComparePrice">
+                                        $0.00
+                                    </del>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- SELLER TIPS -->
+                    <section class="dashboard-panel seller-tips-panel">
+
+                        <div class="seller-tip-icon">
+
+                            <svg width="22" height="22"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <path d="M9.5 9a2.5 2.5 0 1 1 4.1 1.9c-.9.7-1.6 1.1-1.6 2.6"></path>
+                                <line x1="12" y1="17" x2="12" y2="17"></line>
+
+                            </svg>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                Seller Tip
+                            </h3>
+
+                            <p>
+                                Products with clear images, detailed descriptions
+                                and accurate specifications tend to give customers
+                                more confidence.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+                </aside>
+
+            </form>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================
+         NOTIFICATION PANEL
+    ========================== -->
+    <div
+        class="dashboard-notification-panel"
+        id="notificationPanel"
+    >
+
+        <div class="notification-panel-header">
+
+            <div>
+
+                <h3>
+                    Notifications
+                </h3>
+
+                <span>
+                    3 new notifications
+                </span>
+
+            </div>
+
+            <button
+                type="button"
+                id="closeNotificationPanel"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="notification-list">
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <strong>
+                        Product approved
+                    </strong>
+
+                    <p>
+                        Your latest product has been approved.
+                    </p>
+
+                    <span>
+                        12 min ago
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+                    +
+                </div>
+
+                <div>
+
+                    <strong>
+                        New order received
+                    </strong>
+
+                    <p>
+                        You received a new order worth $159.
+                    </p>
+
+                    <span>
+                        38 min ago
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <strong>
+                        Low stock alert
+                    </strong>
+
+                    <p>
+                        3 products are running low on stock.
+                    </p>
+
+                    <span>
+                        1 hour ago
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         LOGOUT MODAL
+    ========================== -->
+    <div
+        class="dashboard-modal"
+        id="logoutModal"
+    >
+
+        <div class="dashboard-modal-card">
+
+            <div class="modal-icon">
+
+                <svg width="24" height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M10 17l5-5-5-5"></path>
+                    <path d="M15 12H3"></path>
+                    <path d="M21 19V5a2 2 0 0 0-2-2h-6"></path>
+                </svg>
+
+            </div>
+
+            <h3>
+                Logout from Seller Center?
+            </h3>
+
+            <p>
+                You can sign in again anytime using your account.
+            </p>
+
+            <div class="modal-actions">
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="cancelLogout"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="button"
+                    class="danger-btn"
+                    id="confirmLogout"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN JS
+    ========================== -->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
