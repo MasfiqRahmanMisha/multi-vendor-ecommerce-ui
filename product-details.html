@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Product Details | MarketHub</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       TOP BAR
+  ========================== -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+
+      <p>Free shipping on orders over ৳2,000</p>
+
+      <div class="top-links">
+        <a href="#">Help Center</a>
+        <a href="#">Track Order</a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="navbar">
+
+    <div class="container navbar-inner">
+
+      <a href="index.html" class="logo">
+        Market<span>Hub</span>
+      </a>
+
+
+      <nav class="main-nav">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="products.html" class="active">
+          Products
+        </a>
+
+        <a href="categories.html">
+          Categories
+        </a>
+
+        <a href="vendor/dashboard.html">
+          Become a Seller
+        </a>
+
+      </nav>
+
+
+      <div class="search-box">
+
+        <input
+          type="text"
+          id="detailsSearch"
+          placeholder="Search products..."
+          autocomplete="off"
+        >
+
+        <button
+          type="button"
+          id="detailsSearchBtn"
+          aria-label="Search"
+        >
+
+          <svg
+            width="19"
+            height="19"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m20 20-3.5-3.5"></path>
+          </svg>
+
+        </button>
+
+      </div>
+
+
+      <div class="nav-actions">
+
+        <a href="login.html" class="login-btn">
+          Login
+        </a>
+
+        <a href="cart.html" class="cart-btn">
+
+          <svg
+            width="19"
+            height="19"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="9" cy="20" r="1"></circle>
+            <circle cx="19" cy="20" r="1"></circle>
+            <path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 8H6"></path>
+          </svg>
+
+          <span>Cart</span>
+
+          <span id="cartCount" class="cart-count">
+            0
+          </span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+  <main>
+
+
+    <!-- =========================
+         BREADCRUMB
+    ========================== -->
+    <section class="product-details-section">
+
+      <div class="container">
+
+        <div class="product-breadcrumb">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <span>/</span>
+
+          <a href="products.html">
+            Products
+          </a>
+
+          <span>/</span>
+
+          <span id="breadcrumbProduct">
+            Product Details
+          </span>
+
+        </div>
+
+
+        <!-- =========================
+             PRODUCT DETAILS
+        ========================== -->
+        <div
+          class="product-details-layout"
+          id="productDetails"
+        >
+
+
+          <!-- Product Image -->
+          <div class="product-details-gallery">
+
+            <div class="product-main-image">
+
+              <img
+                id="detailProductImage"
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=90"
+                alt="Product"
+              >
+
+              <span
+                id="detailProductBadge"
+                class="product-details-badge"
+              >
+                Popular
+              </span>
+
+            </div>
+
+
+            <div class="product-image-thumbnails">
+
+              <button
+                type="button"
+                class="product-thumbnail active"
+                data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=90"
+              >
+
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=80"
+                  alt="Product thumbnail"
+                >
+
+              </button>
+
+
+              <button
+                type="button"
+                class="product-thumbnail"
+                data-image="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=1200&q=90"
+              >
+
+                <img
+                  src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=300&q=80"
+                  alt="Product thumbnail"
+                >
+
+              </button>
+
+
+              <button
+                type="button"
+                class="product-thumbnail"
+                data-image="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=90"
+              >
+
+                <img
+                  src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=300&q=80"
+                  alt="Product thumbnail"
+                >
+
+              </button>
+
+
+              <button
+                type="button"
+                class="product-thumbnail"
+                data-image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=1200&q=90"
+              >
+
+                <img
+                  src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=300&q=80"
+                  alt="Product thumbnail"
+                >
+
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- Product Information -->
+          <div class="product-details-info">
+
+
+            <span
+              class="product-category"
+              id="detailProductCategory"
+            >
+              Shoes
+            </span>
+
+
+            <h1 id="detailProductName">
+              Premium Running Shoes
+            </h1>
+
+
+            <div class="product-details-rating">
+
+              <div class="rating-stars">
+
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                </svg>
+
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                </svg>
+
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                </svg>
+
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                </svg>
+
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                </svg>
+
+              </div>
+
+              <span id="detailProductRating">
+                4.8
+              </span>
+
+              <span class="rating-divider">
+                |
+              </span>
+
+              <span id="detailProductReviews">
+                128 reviews
+              </span>
+
+            </div>
+
+
+            <div class="product-details-price-row">
+
+              <strong
+                class="product-details-price"
+                id="detailProductPrice"
+              >
+                ৳2,400
+              </strong>
+
+              <span class="product-stock">
+                In Stock
+              </span>
+
+            </div>
+
+
+            <p
+              class="product-details-description"
+              id="detailProductDescription"
+            >
+              Experience comfort and performance with this
+              premium running shoe, designed for everyday
+              movement, training and active lifestyles.
+            </p>
+
+
+            <!-- Seller -->
+            <div class="product-seller-card">
+
+              <div class="seller-avatar">
+                US
+              </div>
+
+              <div class="seller-info">
+
+                <span>
+                  Sold by
+                </span>
+
+                <strong id="detailProductVendor">
+                  Urban Store
+                </strong>
+
+              </div>
+
+              <a
+                href="#"
+                class="seller-view-link"
+              >
+                View Store
+              </a>
+
+            </div>
+
+
+            <!-- Divider -->
+            <div class="details-divider"></div>
+
+
+            <!-- Quantity -->
+            <div class="quantity-section">
+
+              <label>
+                Quantity
+              </label>
+
+              <div class="quantity-control">
+
+                <button
+                  type="button"
+                  id="quantityMinus"
+                  aria-label="Decrease quantity"
+                >
+                  −
+                </button>
+
+                <input
+                  type="number"
+                  id="productQuantity"
+                  value="1"
+                  min="1"
+                  max="99"
+                  readonly
+                >
+
+                <button
+                  type="button"
+                  id="quantityPlus"
+                  aria-label="Increase quantity"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- Actions -->
+            <div class="product-details-actions">
+
+              <button
+                type="button"
+                class="primary-btn product-add-btn"
+                id="detailAddToCart"
+              >
+
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="9" cy="20" r="1"></circle>
+                  <circle cx="19" cy="20" r="1"></circle>
+                  <path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 8H6"></path>
+                </svg>
+
+                Add to Cart
+
+              </button>
+
+
+              <button
+                type="button"
+                class="wishlist-btn"
+                id="wishlistBtn"
+                aria-label="Add to wishlist"
+              >
+
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"></path>
+                </svg>
+
+              </button>
+
+            </div>
+
+
+            <!-- Benefits -->
+            <div class="product-benefits">
+
+              <div class="product-benefit">
+
+                <div class="benefit-icon">
+
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M3 7h11v10H3z"></path>
+                    <path d="M14 10h4l3 3v4h-7z"></path>
+                    <circle cx="7" cy="19" r="2"></circle>
+                    <circle cx="18" cy="19" r="2"></circle>
+                  </svg>
+
+                </div>
+
+                <div>
+                  <strong>Fast Delivery</strong>
+                  <span>Across Bangladesh</span>
+                </div>
+
+              </div>
+
+
+              <div class="product-benefit">
+
+                <div class="benefit-icon">
+
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"></path>
+                    <path d="M2 7h20v5H2z"></path>
+                    <path d="M12 22V7"></path>
+                    <path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7Z"></path>
+                    <path d="M12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7Z"></path>
+                  </svg>
+
+                </div>
+
+                <div>
+                  <strong>Secure Packaging</strong>
+                  <span>Carefully packed</span>
+                </div>
+
+              </div>
+
+
+              <div class="product-benefit">
+
+                <div class="benefit-icon">
+
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 12a8 8 0 1 1-2.34-5.66"></path>
+                    <path d="M20 4v6h-6"></path>
+                  </svg>
+
+                </div>
+
+                <div>
+                  <strong>Easy Returns</strong>
+                  <span>Simple return process</span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             DESCRIPTION / INFO
+        ========================== -->
+        <div class="product-information-section">
+
+          <div class="product-tabs">
+
+            <button
+              type="button"
+              class="product-tab active"
+              data-tab="description"
+            >
+              Description
+            </button>
+
+            <button
+              type="button"
+              class="product-tab"
+              data-tab="specifications"
+            >
+              Specifications
+            </button>
+
+            <button
+              type="button"
+              class="product-tab"
+              data-tab="reviews"
+            >
+              Reviews
+            </button>
+
+          </div>
+
+
+          <!-- Description -->
+          <div
+            class="product-tab-content active"
+            id="descriptionTab"
+          >
+
+            <h3>
+              Product Description
+            </h3>
+
+            <p>
+              Designed for comfort, durability and everyday
+              performance, this product combines modern
+              styling with practical functionality.
+            </p>
+
+            <p>
+              Whether you're shopping for yourself or
+              looking for a reliable everyday product,
+              MarketHub connects you with trusted sellers
+              and quality products.
+            </p>
+
+          </div>
+
+
+          <!-- Specifications -->
+          <div
+            class="product-tab-content"
+            id="specificationsTab"
+            hidden
+          >
+
+            <h3>
+              Product Specifications
+            </h3>
+
+            <div class="specification-grid">
+
+              <div class="specification-item">
+                <span>Brand</span>
+                <strong>MarketHub Select</strong>
+              </div>
+
+              <div class="specification-item">
+                <span>Category</span>
+                <strong id="specCategory">Shoes</strong>
+              </div>
+
+              <div class="specification-item">
+                <span>Availability</span>
+                <strong>In Stock</strong>
+              </div>
+
+              <div class="specification-item">
+                <span>Seller</span>
+                <strong id="specVendor">Urban Store</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Reviews -->
+          <div
+            class="product-tab-content"
+            id="reviewsTab"
+            hidden
+          >
+
+            <h3>
+              Customer Reviews
+            </h3>
+
+            <div class="review-summary">
+
+              <strong id="reviewAverage">
+                4.8
+              </strong>
+
+              <div>
+
+                <div class="rating-stars">
+
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                  </svg>
+
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                  </svg>
+
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                  </svg>
+
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                  </svg>
+
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z"/>
+                  </svg>
+
+                </div>
+
+                <span>
+                  Based on customer reviews
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         RELATED PRODUCTS
+    ========================== -->
+    <section class="section related-products-section">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div>
+
+            <span class="eyebrow">
+              YOU MAY ALSO LIKE
+            </span>
+
+            <h2>
+              Related Products
+            </h2>
+
+          </div>
+
+          <a
+            href="products.html"
+            class="section-link"
+          >
+            View All
+
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m13 6 6 6-6 6"></path>
+            </svg>
+
+          </a>
+
+        </div>
+
+
+        <div class="related-products-grid">
+
+
+          <!-- Related 1 -->
+          <article class="product-card">
+
+            <a
+              href="product-details.html?id=headphones"
+              class="product-image-wrap"
+            >
+
+              <img
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=85"
+                alt="Wireless Headphones"
+                class="product-image"
+              >
+
+            </a>
+
+            <div class="product-card-content">
+
+              <span class="product-category">
+                Electronics
+              </span>
+
+              <a
+                href="product-details.html?id=headphones"
+                class="product-title"
+              >
+                Wireless Headphones
+              </a>
+
+              <div class="product-card-bottom">
+
+                <strong class="product-price">
+                  ৳1,700
+                </strong>
+
+                <button
+                  type="button"
+                  class="add-cart-btn"
+                  data-product="Wireless Headphones"
+                  data-price="1700"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14"></path>
+                    <path d="M5 12h14"></path>
+                  </svg>
+                  Add
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Related 2 -->
+          <article class="product-card">
+
+            <a
+              href="product-details.html?id=leather-bag"
+              class="product-image-wrap"
+            >
+
+              <img
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=85"
+                alt="Premium Leather Bag"
+                class="product-image"
+              >
+
+            </a>
+
+            <div class="product-card-content">
+
+              <span class="product-category">
+                Fashion
+              </span>
+
+              <a
+                href="product-details.html?id=leather-bag"
+                class="product-title"
+              >
+                Premium Leather Bag
+              </a>
+
+              <div class="product-card-bottom">
+
+                <strong class="product-price">
+                  ৳1,950
+                </strong>
+
+                <button
+                  type="button"
+                  class="add-cart-btn"
+                  data-product="Premium Leather Bag"
+                  data-price="1950"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14"></path>
+                    <path d="M5 12h14"></path>
+                  </svg>
+                  Add
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Related 3 -->
+          <article class="product-card">
+
+            <a
+              href="product-details.html?id=smart-watch"
+              class="product-image-wrap"
+            >
+
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85"
+                alt="Classic Smart Watch"
+                class="product-image"
+              >
+
+            </a>
+
+            <div class="product-card-content">
+
+              <span class="product-category">
+                Electronics
+              </span>
+
+              <a
+                href="product-details.html?id=smart-watch"
+                class="product-title"
+              >
+                Classic Smart Watch
+              </a>
+
+              <div class="product-card-bottom">
+
+                <strong class="product-price">
+                  ৳3,200
+                </strong>
+
+                <button
+                  type="button"
+                  class="add-cart-btn"
+                  data-product="Classic Smart Watch"
+                  data-price="3200"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14"></path>
+                    <path d="M5 12h14"></path>
+                  </svg>
+                  Add
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Related 4 -->
+          <article class="product-card">
+
+            <a
+              href="product-details.html?id=travel-backpack"
+              class="product-image-wrap"
+            >
+
+              <img
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=85"
+                alt="Travel Backpack"
+                class="product-image"
+              >
+
+            </a>
+
+            <div class="product-card-content">
+
+              <span class="product-category">
+                Fashion
+              </span>
+
+              <a
+                href="product-details.html?id=travel-backpack"
+                class="product-title"
+              >
+                Travel Backpack
+              </a>
+
+              <div class="product-card-bottom">
+
+                <strong class="product-price">
+                  ৳1,450
+                </strong>
+
+                <button
+                  type="button"
+                  class="add-cart-btn"
+                  data-product="Travel Backpack"
+                  data-price="1450"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M12 5v14"></path>
+                    <path d="M5 12h14"></path>
+                  </svg>
+                  Add
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="logo">
+            Market<span>Hub</span>
+          </a>
+
+          <p>
+            A modern multi-vendor marketplace connecting
+            customers with trusted sellers.
+          </p>
+
+          <div class="footer-socials">
+
+            <a href="#" aria-label="Facebook">
+              f
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              ig
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              in
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>
+            Marketplace
+          </h4>
+
+          <a href="products.html">
+            All Products
+          </a>
+
+          <a href="categories.html">
+            Categories
+          </a>
+
+          <a href="cart.html">
+            Shopping Cart
+          </a>
+
+          <a href="login.html">
+            My Account
+          </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>
+            For Sellers
+          </h4>
+
+          <a href="vendor/dashboard.html">
+            Seller Dashboard
+          </a>
+
+          <a href="vendor/products.html">
+            My Products
+          </a>
+
+          <a href="vendor/orders.html">
+            Orders
+          </a>
+
+          <a href="vendor/earnings.html">
+            Earnings
+          </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>
+            Support
+          </h4>
+
+          <a href="#">
+            Help Center
+          </a>
+
+          <a href="#">
+            Track Order
+          </a>
+
+          <a href="#">
+            Privacy Policy
+          </a>
+
+          <a href="#">
+            Terms & Conditions
+          </a>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © 2026 MarketHub. All rights reserved.
+        </p>
+
+        <p>
+          Built for a modern marketplace experience.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
