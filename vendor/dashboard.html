@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seller Dashboard | MarketHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- =========================
+         MOBILE HEADER
+    ========================== -->
+    <header class="mobile-dashboard-header">
+
+        <a href="../index.html" class="logo">
+            Market<span>Hub</span>
+        </a>
+
+        <button
+            type="button"
+            class="mobile-menu-btn"
+            id="mobileSidebarToggle"
+            aria-label="Open menu"
+        >
+            <svg width="22" height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         DASHBOARD LAYOUT
+    ========================== -->
+    <div class="dashboard-layout">
+
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../index.html" class="sidebar-logo">
+                    Market<span>Hub</span>
+                </a>
+
+
+                <div class="seller-profile">
+
+                    <div class="seller-avatar">
+                        <span>JD</span>
+                    </div>
+
+                    <div class="seller-profile-info">
+
+                        <strong>John Doe</strong>
+
+                        <span>Premium Seller</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MAIN MENU -->
+                <div class="sidebar-section">
+
+                    <span class="sidebar-section-title">
+                        MAIN MENU
+                    </span>
+
+
+                    <nav class="sidebar-nav">
+
+                        <a
+                            href="dashboard.html"
+                            class="sidebar-link active"
+                        >
+
+                            <span class="sidebar-link-icon">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+
+                                </svg>
+
+                            </span>
+
+                            <span>Dashboard</span>
+
+                        </a>
+
+
+                        <a href="products.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <path d="m3 7 9-4 9 4-9 4-9-4Z"></path>
+                                    <path d="m3 12 9 4 9-4"></path>
+                                    <path d="m3 17 9 4 9-4"></path>
+
+                                </svg>
+
+                            </span>
+
+                            <span>Products</span>
+
+                        </a>
+
+
+                        <a href="add-product.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                                    <line x1="8" y1="12" x2="16" y2="12"></line>
+
+                                </svg>
+
+                            </span>
+
+                            <span>Add Product</span>
+
+                        </a>
+
+
+                        <a href="orders.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <path d="M6 2h12"></path>
+                                    <path d="M6 2v5"></path>
+                                    <path d="M18 2v5"></path>
+                                    <path d="M5 7h14"></path>
+                                    <path d="M6 7v11a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V7"></path>
+
+                                </svg>
+
+                            </span>
+
+                            <span>Orders</span>
+
+                            <span class="sidebar-badge">
+                                12
+                            </span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- BUSINESS -->
+                <div class="sidebar-section">
+
+                    <span class="sidebar-section-title">
+                        BUSINESS
+                    </span>
+
+
+                    <nav class="sidebar-nav">
+
+                        <a href="analytics.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <line x1="4" y1="19" x2="4" y2="10"></line>
+                                    <line x1="10" y1="19" x2="10" y2="5"></line>
+                                    <line x1="16" y1="19" x2="16" y2="8"></line>
+                                    <line x1="22" y1="19" x2="22" y2="3"></line>
+
+                                </svg>
+
+                            </span>
+
+                            <span>Analytics</span>
+
+                        </a>
+
+
+                        <a href="earnings.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <path d="M15 8.5c-.7-.7-1.7-1.1-3-1.1-1.7 0-3 .9-3 2.2 0 1.4 1.3 2 3 2.4 1.7.4 3 .9 3 2.3 0 1.4-1.3 2.3-3.1 2.3-1.3 0-2.4-.4-3.2-1.2"></path>
+                                    <line x1="12" y1="6" x2="12" y2="18"></line>
+
+                                </svg>
+
+                            </span>
+
+                            <span>Earnings</span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIDEBAR BOTTOM -->
+            <div class="sidebar-bottom">
+
+                <a href="../index.html" class="sidebar-link">
+
+                    <span class="sidebar-link-icon">
+
+                        <svg width="19" height="19"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <path d="M3 10.5 12 3l9 7.5"></path>
+                            <path d="M5 9.5V21h14V9.5"></path>
+                            <path d="M9 21v-7h6v7"></path>
+
+                        </svg>
+
+                    </span>
+
+                    <span>Visit Store</span>
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="sidebar-link sidebar-logout"
+                    id="sellerLogoutBtn"
+                >
+
+                    <span class="sidebar-link-icon">
+
+                        <svg width="19" height="19"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <path d="M10 17l5-5-5-5"></path>
+                            <path d="M15 12H3"></path>
+                            <path d="M21 19V5a2 2 0 0 0-2-2h-6"></path>
+
+                        </svg>
+
+                    </span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- OVERLAY -->
+        <div
+            class="dashboard-sidebar-overlay"
+            id="dashboardSidebarOverlay"
+        ></div>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+        <main class="dashboard-main">
+
+
+            <!-- TOPBAR -->
+            <div class="dashboard-topbar">
+
+                <div class="dashboard-heading">
+
+                    <span class="dashboard-eyebrow">
+                        SELLER CENTER
+                    </span>
+
+                    <h1>
+                        Good morning, John 👋
+                    </h1>
+
+                    <p>
+                        Here's what's happening with your store today.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-top-actions">
+
+                    <button
+                        type="button"
+                        class="dashboard-icon-btn"
+                        id="notificationBtn"
+                        aria-label="Notifications"
+                    >
+
+                        <svg width="20" height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                            <path d="M13.7 21a2 2 0 0 1-3.4 0"></path>
+
+                        </svg>
+
+                        <span class="notification-dot"></span>
+
+                    </button>
+
+
+                    <a
+                        href="add-product.html"
+                        class="dashboard-add-btn"
+                    >
+
+                        <svg width="18" height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                        </svg>
+
+                        <span>Add Product</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 STAT CARDS
+            ========================== -->
+            <section class="dashboard-stats">
+
+
+                <!-- SALES -->
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="stat-icon stat-icon-blue">
+
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <path d="M3 3v18h18"></path>
+                                <path d="m7 16 4-5 3 3 5-7"></path>
+
+                            </svg>
+
+                        </div>
+
+                        <span class="stat-change positive">
+                            +12.8%
+                        </span>
+
+                    </div>
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Total Sales
+                        </span>
+
+                        <strong class="stat-value">
+                            $24,580
+                        </strong>
+
+                        <span class="stat-description">
+                            Compared to last month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDERS -->
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="stat-icon stat-icon-purple">
+
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <path d="M6 2h12"></path>
+                                <path d="M6 2v5"></path>
+                                <path d="M18 2v5"></path>
+                                <path d="M5 7h14"></path>
+                                <path d="M6 7v11a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V7"></path>
+
+                            </svg>
+
+                        </div>
+
+                        <span class="stat-change positive">
+                            +8.4%
+                        </span>
+
+                    </div>
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Total Orders
+                        </span>
+
+                        <strong class="stat-value">
+                            1,284
+                        </strong>
+
+                        <span class="stat-description">
+                            86 orders this week
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCTS -->
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="stat-icon stat-icon-cyan">
+
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <path d="m3 7 9-4 9 4-9 4-9-4Z"></path>
+                                <path d="m3 12 9 4 9-4"></path>
+                                <path d="m3 17 9 4 9-4"></path>
+
+                            </svg>
+
+                        </div>
+
+                        <span class="stat-change neutral">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Total Products
+                        </span>
+
+                        <strong class="stat-value">
+                            148
+                        </strong>
+
+                        <span class="stat-description">
+                            7 products need attention
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EARNINGS -->
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="stat-icon stat-icon-green">
+
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <path d="M15 8.5c-.7-.7-1.7-1.1-3-1.1-1.7 0-3 .9-3 2.2 0 1.4 1.3 2 3 2.4 1.7.4 3 .9 3 2.3 0 1.4-1.3 2.3-3.1 2.3-1.3 0-2.4-.4-3.2-1.2"></path>
+                                <line x1="12" y1="6" x2="12" y2="18"></line>
+
+                            </svg>
+
+                        </div>
+
+                        <span class="stat-change positive">
+                            +15.2%
+                        </span>
+
+                    </div>
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Net Earnings
+                        </span>
+
+                        <strong class="stat-value">
+                            $18,920
+                        </strong>
+
+                        <span class="stat-description">
+                            After platform fees
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 MAIN GRID
+            ========================== -->
+            <section class="dashboard-content-grid">
+
+
+                <!-- SALES OVERVIEW -->
+                <div class="dashboard-panel sales-overview-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h2>
+                                Sales Overview
+                            </h2>
+
+                            <p>
+                                Your store performance
+                            </p>
+
+                        </div>
+
+
+                        <select
+                            class="dashboard-select"
+                            id="salesPeriod"
+                        >
+
+                            <option value="7">Last 7 Days</option>
+                            <option value="30" selected>Last 30 Days</option>
+                            <option value="90">Last 3 Months</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- CHART -->
+                    <div class="sales-chart">
+
+                        <div class="chart-y-axis">
+
+                            <span>$8k</span>
+                            <span>$6k</span>
+                            <span>$4k</span>
+                            <span>$2k</span>
+                            <span>$0</span>
+
+                        </div>
+
+
+                        <div class="chart-area">
+
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+                            <div class="chart-grid-line"></div>
+
+
+                            <svg
+                                class="sales-line-chart"
+                                viewBox="0 0 700 260"
+                                preserveAspectRatio="none"
+                            >
+
+                                <defs>
+
+                                    <linearGradient
+                                        id="salesGradient"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+
+                                        <stop
+                                            offset="0%"
+                                            stop-opacity="0.22"
+                                        />
+
+                                        <stop
+                                            offset="100%"
+                                            stop-opacity="0"
+                                        />
+
+                                    </linearGradient>
+
+                                </defs>
+
+
+                                <path
+                                    d="M0,205
+                                       C45,190 65,198 100,175
+                                       C135,152 160,180 200,145
+                                       C240,110 260,125 300,135
+                                       C340,145 355,88 400,105
+                                       C445,122 455,80 500,94
+                                       C545,108 565,60 605,72
+                                       C645,84 665,45 700,30
+                                       L700,260
+                                       L0,260 Z"
+                                    fill="url(#salesGradient)"
+                                ></path>
+
+
+                                <path
+                                    d="M0,205
+                                       C45,190 65,198 100,175
+                                       C135,152 160,180 200,145
+                                       C240,110 260,125 300,135
+                                       C340,145 355,88 400,105
+                                       C445,122 455,80 500,94
+                                       C545,108 565,60 605,72
+                                       C645,84 665,45 700,30"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                ></path>
+
+                            </svg>
+
+
+                            <div class="chart-tooltip" id="chartTooltip">
+
+                                <span>
+                                    Apr 24
+                                </span>
+
+                                <strong>
+                                    $6,842
+                                </strong>
+
+                            </div>
+
+
+                            <div class="chart-x-axis">
+
+                                <span>Apr 01</span>
+                                <span>Apr 07</span>
+                                <span>Apr 14</span>
+                                <span>Apr 21</span>
+                                <span>Apr 28</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDER STATUS -->
+                <div class="dashboard-panel order-status-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h2>
+                                Order Status
+                            </h2>
+
+                            <p>
+                                Current order breakdown
+                            </p>
+
+                        </div>
+
+                        <a
+                            href="orders.html"
+                            class="panel-link"
+                        >
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div class="order-status-list">
+
+
+                        <a
+                            href="orders.html?status=pending"
+                            class="order-status-item"
+                        >
+
+                            <div class="status-icon pending">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <polyline points="12 7 12 12 15 14"></polyline>
+
+                                </svg>
+
+                            </div>
+
+                            <div class="status-info">
+
+                                <strong>Pending</strong>
+                                <span>Waiting for confirmation</span>
+
+                            </div>
+
+                            <span class="status-number">
+                                18
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="orders.html?status=processing"
+                            class="order-status-item"
+                        >
+
+                            <div class="status-icon processing">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <path d="M21 12a9 9 0 1 1-2.64-6.36"></path>
+                                    <polyline points="21 3 21 9 15 9"></polyline>
+
+                                </svg>
+
+                            </div>
+
+                            <div class="status-info">
+
+                                <strong>Processing</strong>
+                                <span>Being prepared</span>
+
+                            </div>
+
+                            <span class="status-number">
+                                26
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="orders.html?status=shipped"
+                            class="order-status-item"
+                        >
+
+                            <div class="status-icon shipped">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <rect x="1" y="3" width="15" height="13"></rect>
+                                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+
+                                </svg>
+
+                            </div>
+
+                            <div class="status-info">
+
+                                <strong>Shipped</strong>
+                                <span>On the way to customer</span>
+
+                            </div>
+
+                            <span class="status-number">
+                                34
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="orders.html?status=delivered"
+                            class="order-status-item"
+                        >
+
+                            <div class="status-icon delivered">
+
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+
+                                </svg>
+
+                            </div>
+
+                            <div class="status-info">
+
+                                <strong>Delivered</strong>
+                                <span>Successfully completed</span>
+
+                            </div>
+
+                            <span class="status-number">
+                                86
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 BOTTOM GRID
+            ========================== -->
+            <section class="dashboard-bottom-grid">
+
+
+                <!-- RECENT ORDERS -->
+                <div class="dashboard-panel recent-orders-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h2>
+                                Recent Orders
+                            </h2>
+
+                            <p>
+                                Latest customer purchases
+                            </p>
+
+                        </div>
+
+                        <a
+                            href="orders.html"
+                            class="panel-link"
+                        >
+                            View All Orders
+                        </a>
+
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table class="dashboard-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Order</th>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        <strong>#MH-10482</strong>
+                                    </td>
+
+                                    <td>
+                                        Olivia Smith
+                                    </td>
+
+                                    <td>
+                                        Wireless Headphones
+                                    </td>
+
+                                    <td>
+                                        $129.00
+                                    </td>
+
+                                    <td>
+                                        <span class="order-status delivered">
+                                            Delivered
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>#MH-10481</strong>
+                                    </td>
+
+                                    <td>
+                                        Daniel Wilson
+                                    </td>
+
+                                    <td>
+                                        Smart Watch Pro
+                                    </td>
+
+                                    <td>
+                                        $249.00
+                                    </td>
+
+                                    <td>
+                                        <span class="order-status shipped">
+                                            Shipped
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>#MH-10480</strong>
+                                    </td>
+
+                                    <td>
+                                        Emma Brown
+                                    </td>
+
+                                    <td>
+                                        Premium Backpack
+                                    </td>
+
+                                    <td>
+                                        $89.00
+                                    </td>
+
+                                    <td>
+                                        <span class="order-status processing">
+                                            Processing
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        <strong>#MH-10479</strong>
+                                    </td>
+
+                                    <td>
+                                        James Miller
+                                    </td>
+
+                                    <td>
+                                        Mechanical Keyboard
+                                    </td>
+
+                                    <td>
+                                        $159.00
+                                    </td>
+
+                                    <td>
+                                        <span class="order-status pending">
+                                            Pending
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOP PRODUCTS -->
+                <div class="dashboard-panel top-products-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h2>
+                                Top Products
+                            </h2>
+
+                            <p>
+                                Best performing items
+                            </p>
+
+                        </div>
+
+                        <a
+                            href="products.html"
+                            class="panel-link"
+                        >
+                            Manage
+                        </a>
+
+                    </div>
+
+
+                    <div class="top-product-list">
+
+
+                        <div class="top-product-item">
+
+                            <div class="product-rank">
+                                01
+                            </div>
+
+                            <div class="top-product-image">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=200&q=80"
+                                    alt="Wireless Headphones"
+                                >
+
+                            </div>
+
+                            <div class="top-product-info">
+
+                                <strong>
+                                    Wireless Headphones
+                                </strong>
+
+                                <span>
+                                    184 sold
+                                </span>
+
+                            </div>
+
+                            <strong class="top-product-price">
+                                $129
+                            </strong>
+
+                        </div>
+
+
+                        <div class="top-product-item">
+
+                            <div class="product-rank">
+                                02
+                            </div>
+
+                            <div class="top-product-image">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=200&q=80"
+                                    alt="Smart Watch"
+                                >
+
+                            </div>
+
+                            <div class="top-product-info">
+
+                                <strong>
+                                    Smart Watch Pro
+                                </strong>
+
+                                <span>
+                                    152 sold
+                                </span>
+
+                            </div>
+
+                            <strong class="top-product-price">
+                                $249
+                            </strong>
+
+                        </div>
+
+
+                        <div class="top-product-item">
+
+                            <div class="product-rank">
+                                03
+                            </div>
+
+                            <div class="top-product-image">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=200&q=80"
+                                    alt="Premium Backpack"
+                                >
+
+                            </div>
+
+                            <div class="top-product-info">
+
+                                <strong>
+                                    Premium Backpack
+                                </strong>
+
+                                <span>
+                                    128 sold
+                                </span>
+
+                            </div>
+
+                            <strong class="top-product-price">
+                                $89
+                            </strong>
+
+                        </div>
+
+
+                        <div class="top-product-item">
+
+                            <div class="product-rank">
+                                04
+                            </div>
+
+                            <div class="top-product-image">
+
+                                <img
+                                    src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=200&q=80"
+                                    alt="Mechanical Keyboard"
+                                >
+
+                            </div>
+
+                            <div class="top-product-info">
+
+                                <strong>
+                                    Mechanical Keyboard
+                                </strong>
+
+                                <span>
+                                    96 sold
+                                </span>
+
+                            </div>
+
+                            <strong class="top-product-price">
+                                $159
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 QUICK ACTIONS
+            ========================== -->
+            <section class="dashboard-panel quick-actions-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h2>
+                            Quick Actions
+                        </h2>
+
+                        <p>
+                            Manage your store faster
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quick-actions-grid">
+
+
+                    <a
+                        href="add-product.html"
+                        class="quick-action-card"
+                    >
+
+                        <div class="quick-action-icon">
+
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Add New Product
+                            </strong>
+
+                            <span>
+                                List a new item
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="orders.html?status=pending"
+                        class="quick-action-card"
+                    >
+
+                        <div class="quick-action-icon">
+
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <polyline points="12 7 12 12 15 14"></polyline>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Pending Orders
+                            </strong>
+
+                            <span>
+                                18 orders waiting
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="analytics.html"
+                        class="quick-action-card"
+                    >
+
+                        <div class="quick-action-icon">
+
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <line x1="4" y1="19" x2="4" y2="10"></line>
+                                <line x1="10" y1="19" x2="10" y2="5"></line>
+                                <line x1="16" y1="19" x2="16" y2="8"></line>
+                                <line x1="22" y1="19" x2="22" y2="3"></line>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                View Analytics
+                            </strong>
+
+                            <span>
+                                Track your performance
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="earnings.html"
+                        class="quick-action-card"
+                    >
+
+                        <div class="quick-action-icon">
+
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round">
+
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <path d="M15 8.5c-.7-.7-1.7-1.1-3-1.1-1.7 0-3 .9-3 2.2 0 1.4 1.3 2 3 2.4 1.7.4 3 .9 3 2.3 0 1.4-1.3 2.3-3.1 2.3-1.3 0-2.4-.4-3.2-1.2"></path>
+                                <line x1="12" y1="6" x2="12" y2="18"></line>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Earnings
+                            </strong>
+
+                            <span>
+                                Check your revenue
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================
+         NOTIFICATION PANEL
+    ========================== -->
+    <div
+        class="dashboard-notification-panel"
+        id="notificationPanel"
+    >
+
+        <div class="notification-panel-header">
+
+            <div>
+
+                <h3>
+                    Notifications
+                </h3>
+
+                <span>
+                    3 new notifications
+                </span>
+
+            </div>
+
+            <button
+                type="button"
+                id="closeNotificationPanel"
+                aria-label="Close notifications"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="notification-list">
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <strong>
+                        Order delivered
+                    </strong>
+
+                    <p>
+                        Order #MH-10482 was delivered successfully.
+                    </p>
+
+                    <span>
+                        12 min ago
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+                    +
+                </div>
+
+                <div>
+
+                    <strong>
+                        New order received
+                    </strong>
+
+                    <p>
+                        You received a new order worth $159.
+                    </p>
+
+                    <span>
+                        38 min ago
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <strong>
+                        Low stock alert
+                    </strong>
+
+                    <p>
+                        3 products are running low on stock.
+                    </p>
+
+                    <span>
+                        1 hour ago
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         LOGOUT MODAL
+    ========================== -->
+    <div
+        class="dashboard-modal"
+        id="logoutModal"
+    >
+
+        <div class="dashboard-modal-card">
+
+            <div class="modal-icon">
+
+                <svg width="24" height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+
+                    <path d="M10 17l5-5-5-5"></path>
+                    <path d="M15 12H3"></path>
+                    <path d="M21 19V5a2 2 0 0 0-2-2h-6"></path>
+
+                </svg>
+
+            </div>
+
+            <h3>
+                Logout from Seller Center?
+            </h3>
+
+            <p>
+                You can sign in again anytime using your account.
+            </p>
+
+            <div class="modal-actions">
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="cancelLogout"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="button"
+                    class="danger-btn"
+                    id="confirmLogout"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN JS
+    ========================== -->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

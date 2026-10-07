@@ -1,0 +1,1919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Products | MarketHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- MOBILE HEADER -->
+    <header class="mobile-dashboard-header">
+
+        <a href="../index.html" class="logo">
+            Market<span>Hub</span>
+        </a>
+
+        <button
+            type="button"
+            class="mobile-menu-btn"
+            id="mobileSidebarToggle"
+            aria-label="Open menu"
+        >
+            <svg width="22" height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+        </button>
+
+    </header>
+
+
+    <!-- DASHBOARD LAYOUT -->
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../index.html" class="sidebar-logo">
+                    Market<span>Hub</span>
+                </a>
+
+                <div class="seller-profile">
+
+                    <div class="seller-avatar">
+                        <span>JD</span>
+                    </div>
+
+                    <div class="seller-profile-info">
+                        <strong>John Doe</strong>
+                        <span>Premium Seller</span>
+                    </div>
+
+                </div>
+
+
+                <!-- MAIN MENU -->
+                <div class="sidebar-section">
+
+                    <span class="sidebar-section-title">
+                        MAIN MENU
+                    </span>
+
+                    <nav class="sidebar-nav">
+
+                        <a href="dashboard.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                </svg>
+                            </span>
+
+                            <span>Dashboard</span>
+
+                        </a>
+
+
+                        <a href="products.html" class="sidebar-link active">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="m3 7 9-4 9 4-9 4-9-4Z"></path>
+                                    <path d="m3 12 9 4 9-4"></path>
+                                    <path d="m3 17 9 4 9-4"></path>
+                                </svg>
+                            </span>
+
+                            <span>Products</span>
+
+                        </a>
+
+
+                        <a href="add-product.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                                </svg>
+                            </span>
+
+                            <span>Add Product</span>
+
+                        </a>
+
+
+                        <a href="orders.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M6 2h12"></path>
+                                    <path d="M6 2v5"></path>
+                                    <path d="M18 2v5"></path>
+                                    <path d="M5 7h14"></path>
+                                    <path d="M6 7v11a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V7"></path>
+                                </svg>
+                            </span>
+
+                            <span>Orders</span>
+
+                            <span class="sidebar-badge">12</span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- BUSINESS -->
+                <div class="sidebar-section">
+
+                    <span class="sidebar-section-title">
+                        BUSINESS
+                    </span>
+
+                    <nav class="sidebar-nav">
+
+                        <a href="analytics.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="4" y1="19" x2="4" y2="10"></line>
+                                    <line x1="10" y1="19" x2="10" y2="5"></line>
+                                    <line x1="16" y1="19" x2="16" y2="8"></line>
+                                    <line x1="22" y1="19" x2="22" y2="3"></line>
+                                </svg>
+                            </span>
+
+                            <span>Analytics</span>
+
+                        </a>
+
+
+                        <a href="earnings.html" class="sidebar-link">
+
+                            <span class="sidebar-link-icon">
+                                <svg width="19" height="19"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <path d="M15 8.5c-.7-.7-1.7-1.1-3-1.1-1.7 0-3 .9-3 2.2 0 1.4 1.3 2 3 2.4 1.7.4 3 .9 3 2.3 0 1.4-1.3 2.3-3.1 2.3-1.3 0-2.4-.4-3.2-1.2"></path>
+                                    <line x1="12" y1="6" x2="12" y2="18"></line>
+                                </svg>
+                            </span>
+
+                            <span>Earnings</span>
+
+                        </a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIDEBAR BOTTOM -->
+            <div class="sidebar-bottom">
+
+                <a href="../index.html" class="sidebar-link">
+
+                    <span class="sidebar-link-icon">
+                        <svg width="19" height="19"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M3 10.5 12 3l9 7.5"></path>
+                            <path d="M5 9.5V21h14V9.5"></path>
+                            <path d="M9 21v-7h6v7"></path>
+                        </svg>
+                    </span>
+
+                    <span>Visit Store</span>
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="sidebar-link sidebar-logout"
+                    id="sellerLogoutBtn"
+                >
+
+                    <span class="sidebar-link-icon">
+                        <svg width="19" height="19"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M10 17l5-5-5-5"></path>
+                            <path d="M15 12H3"></path>
+                            <path d="M21 19V5a2 2 0 0 0-2-2h-6"></path>
+                        </svg>
+                    </span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <div
+            class="dashboard-sidebar-overlay"
+            id="dashboardSidebarOverlay"
+        ></div>
+
+
+        <!-- MAIN -->
+        <main class="dashboard-main">
+
+
+            <!-- TOPBAR -->
+            <div class="dashboard-topbar">
+
+                <div class="dashboard-heading">
+
+                    <span class="dashboard-eyebrow">
+                        PRODUCT MANAGEMENT
+                    </span>
+
+                    <h1>
+                        My Products
+                    </h1>
+
+                    <p>
+                        Manage your inventory, pricing and product listings.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-top-actions">
+
+                    <button
+                        type="button"
+                        class="dashboard-icon-btn"
+                        id="notificationBtn"
+                        aria-label="Notifications"
+                    >
+
+                        <svg width="20" height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                            <path d="M13.7 21a2 2 0 0 1-3.4 0"></path>
+                        </svg>
+
+                        <span class="notification-dot"></span>
+
+                    </button>
+
+
+                    <a
+                        href="add-product.html"
+                        class="dashboard-add-btn"
+                    >
+
+                        <svg width="18" height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+
+                        <span>Add Product</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT STATS -->
+            <section class="dashboard-stats">
+
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="stat-icon stat-icon-blue">
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <path d="m3 7 9-4 9 4-9 4-9-4Z"></path>
+                                <path d="m3 12 9 4 9-4"></path>
+                                <path d="m3 17 9 4 9-4"></path>
+                            </svg>
+                        </div>
+
+                        <span class="stat-change neutral">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Total Products
+                        </span>
+
+                        <strong class="stat-value">
+                            148
+                        </strong>
+
+                        <span class="stat-description">
+                            Products in your store
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="stat-icon stat-icon-green">
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+
+                        <span class="stat-change positive">
+                            95%
+                        </span>
+
+                    </div>
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Active Listings
+                        </span>
+
+                        <strong class="stat-value">
+                            141
+                        </strong>
+
+                        <span class="stat-description">
+                            Currently visible
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="stat-icon stat-icon-purple">
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2v20"></path>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+
+                        <span class="stat-change positive">
+                            +12.4%
+                        </span>
+
+                    </div>
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Product Revenue
+                        </span>
+
+                        <strong class="stat-value">
+                            $24.5K
+                        </strong>
+
+                        <span class="stat-description">
+                            This month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat-card">
+
+                    <div class="stat-card-top">
+
+                        <div class="stat-icon stat-icon-cyan">
+                            <svg width="21" height="21"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M10 2h4"></path>
+                                <path d="M12 2v6"></path>
+                                <path d="M7 8h10l1 13H6L7 8Z"></path>
+                            </svg>
+                        </div>
+
+                        <span class="stat-change neutral">
+                            Attention
+                        </span>
+
+                    </div>
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Low Stock
+                        </span>
+
+                        <strong class="stat-value">
+                            7
+                        </strong>
+
+                        <span class="stat-description">
+                            Products need restocking
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PRODUCT MANAGEMENT PANEL -->
+            <section class="dashboard-panel products-management-panel">
+
+                <!-- TOOLBAR -->
+                <div class="products-toolbar">
+
+                    <div class="products-search">
+
+                        <svg width="19" height="19"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+                        </svg>
+
+                        <input
+                            type="search"
+                            id="vendorProductSearch"
+                            placeholder="Search products..."
+                        >
+
+                    </div>
+
+
+                    <div class="products-toolbar-actions">
+
+                        <select
+                            class="dashboard-select"
+                            id="productCategoryFilter"
+                        >
+
+                            <option value="all">
+                                All Categories
+                            </option>
+
+                            <option value="electronics">
+                                Electronics
+                            </option>
+
+                            <option value="fashion">
+                                Fashion
+                            </option>
+
+                            <option value="home">
+                                Home & Living
+                            </option>
+
+                            <option value="beauty">
+                                Beauty
+                            </option>
+
+                            <option value="sports">
+                                Sports
+                            </option>
+
+                        </select>
+
+
+                        <select
+                            class="dashboard-select"
+                            id="productStatusFilter"
+                        >
+
+                            <option value="all">
+                                All Status
+                            </option>
+
+                            <option value="active">
+                                Active
+                            </option>
+
+                            <option value="draft">
+                                Draft
+                            </option>
+
+                            <option value="out-stock">
+                                Out of Stock
+                            </option>
+
+                        </select>
+
+
+                        <select
+                            class="dashboard-select"
+                            id="productSort"
+                        >
+
+                            <option value="newest">
+                                Newest
+                            </option>
+
+                            <option value="oldest">
+                                Oldest
+                            </option>
+
+                            <option value="price-low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="price-high">
+                                Price: High to Low
+                            </option>
+
+                            <option value="stock-low">
+                                Stock: Low to High
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TABLE -->
+                <div class="table-wrapper">
+
+                    <table
+                        class="dashboard-table vendor-products-table"
+                        id="vendorProductsTable"
+                    >
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    <label class="table-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            id="selectAllProducts"
+                                        >
+                                        <span></span>
+                                    </label>
+                                </th>
+
+                                <th>
+                                    Product
+                                </th>
+
+                                <th>
+                                    Category
+                                </th>
+
+                                <th>
+                                    Price
+                                </th>
+
+                                <th>
+                                    Stock
+                                </th>
+
+                                <th>
+                                    Sales
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="vendorProductsBody">
+
+
+                            <!-- PRODUCT 1 -->
+                            <tr
+                                class="vendor-product-row"
+                                data-name="Wireless Headphones"
+                                data-category="electronics"
+                                data-status="active"
+                                data-price="129"
+                                data-stock="42"
+                            >
+
+                                <td>
+
+                                    <label class="table-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            class="product-checkbox"
+                                        >
+                                        <span></span>
+                                    </label>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-product">
+
+                                        <div class="table-product-image">
+
+                                            <img
+                                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=160&q=80"
+                                                alt="Wireless Headphones"
+                                            >
+
+                                        </div>
+
+                                        <div class="table-product-info">
+
+                                            <strong>
+                                                Wireless Headphones
+                                            </strong>
+
+                                            <span>
+                                                SKU: MH-WH-001
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Electronics
+                                </td>
+
+
+                                <td>
+                                    <strong>$129.00</strong>
+                                </td>
+
+
+                                <td>
+                                    <span class="stock-good">
+                                        42
+                                    </span>
+                                </td>
+
+
+                                <td>
+                                    184
+                                </td>
+
+
+                                <td>
+                                    <span class="order-status delivered">
+                                        Active
+                                    </span>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a
+                                            href="add-product.html?edit=1"
+                                            class="table-action-btn"
+                                            title="Edit"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <path d="M12 20h9"></path>
+                                                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                                            </svg>
+
+                                        </a>
+
+
+                                        <button
+                                            type="button"
+                                            class="table-action-btn product-delete-btn"
+                                            title="Delete"
+                                            data-product="Wireless Headphones"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                                <path d="M19 6l-1 14H6L5 6"></path>
+                                                <path d="M10 11v5"></path>
+                                                <path d="M14 11v5"></path>
+                                                <path d="M9 6V3h6v3"></path>
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- PRODUCT 2 -->
+                            <tr
+                                class="vendor-product-row"
+                                data-name="Smart Watch Pro"
+                                data-category="electronics"
+                                data-status="active"
+                                data-price="249"
+                                data-stock="28"
+                            >
+
+                                <td>
+                                    <label class="table-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            class="product-checkbox"
+                                        >
+                                        <span></span>
+                                    </label>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-product">
+
+                                        <div class="table-product-image">
+
+                                            <img
+                                                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=160&q=80"
+                                                alt="Smart Watch Pro"
+                                            >
+
+                                        </div>
+
+                                        <div class="table-product-info">
+
+                                            <strong>
+                                                Smart Watch Pro
+                                            </strong>
+
+                                            <span>
+                                                SKU: MH-SW-002
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Electronics
+                                </td>
+
+
+                                <td>
+                                    <strong>$249.00</strong>
+                                </td>
+
+
+                                <td>
+                                    <span class="stock-good">
+                                        28
+                                    </span>
+                                </td>
+
+
+                                <td>
+                                    152
+                                </td>
+
+
+                                <td>
+                                    <span class="order-status delivered">
+                                        Active
+                                    </span>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a
+                                            href="add-product.html?edit=2"
+                                            class="table-action-btn"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <path d="M12 20h9"></path>
+                                                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                                            </svg>
+
+                                        </a>
+
+
+                                        <button
+                                            type="button"
+                                            class="table-action-btn product-delete-btn"
+                                            data-product="Smart Watch Pro"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                                <path d="M19 6l-1 14H6L5 6"></path>
+                                                <path d="M10 11v5"></path>
+                                                <path d="M14 11v5"></path>
+                                                <path d="M9 6V3h6v3"></path>
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- PRODUCT 3 -->
+                            <tr
+                                class="vendor-product-row"
+                                data-name="Premium Backpack"
+                                data-category="fashion"
+                                data-status="active"
+                                data-price="89"
+                                data-stock="16"
+                            >
+
+                                <td>
+                                    <label class="table-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            class="product-checkbox"
+                                        >
+                                        <span></span>
+                                    </label>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-product">
+
+                                        <div class="table-product-image">
+
+                                            <img
+                                                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=160&q=80"
+                                                alt="Premium Backpack"
+                                            >
+
+                                        </div>
+
+                                        <div class="table-product-info">
+
+                                            <strong>
+                                                Premium Backpack
+                                            </strong>
+
+                                            <span>
+                                                SKU: MH-PB-003
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Fashion
+                                </td>
+
+
+                                <td>
+                                    <strong>$89.00</strong>
+                                </td>
+
+
+                                <td>
+                                    <span class="stock-low">
+                                        16
+                                    </span>
+                                </td>
+
+
+                                <td>
+                                    128
+                                </td>
+
+
+                                <td>
+                                    <span class="order-status delivered">
+                                        Active
+                                    </span>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a
+                                            href="add-product.html?edit=3"
+                                            class="table-action-btn"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <path d="M12 20h9"></path>
+                                                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                                            </svg>
+
+                                        </a>
+
+                                        <button
+                                            type="button"
+                                            class="table-action-btn product-delete-btn"
+                                            data-product="Premium Backpack"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                                <path d="M19 6l-1 14H6L5 6"></path>
+                                                <path d="M10 11v5"></path>
+                                                <path d="M14 11v5"></path>
+                                                <path d="M9 6V3h6v3"></path>
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- PRODUCT 4 -->
+                            <tr
+                                class="vendor-product-row"
+                                data-name="Mechanical Keyboard"
+                                data-category="electronics"
+                                data-status="active"
+                                data-price="159"
+                                data-stock="8"
+                            >
+
+                                <td>
+                                    <label class="table-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            class="product-checkbox"
+                                        >
+                                        <span></span>
+                                    </label>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-product">
+
+                                        <div class="table-product-image">
+
+                                            <img
+                                                src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=160&q=80"
+                                                alt="Mechanical Keyboard"
+                                            >
+
+                                        </div>
+
+                                        <div class="table-product-info">
+
+                                            <strong>
+                                                Mechanical Keyboard
+                                            </strong>
+
+                                            <span>
+                                                SKU: MH-MK-004
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Electronics
+                                </td>
+
+
+                                <td>
+                                    <strong>$159.00</strong>
+                                </td>
+
+
+                                <td>
+                                    <span class="stock-critical">
+                                        8
+                                    </span>
+                                </td>
+
+
+                                <td>
+                                    96
+                                </td>
+
+
+                                <td>
+                                    <span class="order-status delivered">
+                                        Active
+                                    </span>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a
+                                            href="add-product.html?edit=4"
+                                            class="table-action-btn"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <path d="M12 20h9"></path>
+                                                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                                            </svg>
+
+                                        </a>
+
+                                        <button
+                                            type="button"
+                                            class="table-action-btn product-delete-btn"
+                                            data-product="Mechanical Keyboard"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                                <path d="M19 6l-1 14H6L5 6"></path>
+                                                <path d="M10 11v5"></path>
+                                                <path d="M14 11v5"></path>
+                                                <path d="M9 6V3h6v3"></path>
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- PRODUCT 5 -->
+                            <tr
+                                class="vendor-product-row"
+                                data-name="Minimal Table Lamp"
+                                data-category="home"
+                                data-status="active"
+                                data-price="64"
+                                data-stock="31"
+                            >
+
+                                <td>
+                                    <label class="table-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            class="product-checkbox"
+                                        >
+                                        <span></span>
+                                    </label>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-product">
+
+                                        <div class="table-product-image">
+
+                                            <img
+                                                src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=160&q=80"
+                                                alt="Minimal Table Lamp"
+                                            >
+
+                                        </div>
+
+                                        <div class="table-product-info">
+
+                                            <strong>
+                                                Minimal Table Lamp
+                                            </strong>
+
+                                            <span>
+                                                SKU: MH-TL-005
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Home & Living
+                                </td>
+
+
+                                <td>
+                                    <strong>$64.00</strong>
+                                </td>
+
+
+                                <td>
+                                    <span class="stock-good">
+                                        31
+                                    </span>
+                                </td>
+
+
+                                <td>
+                                    74
+                                </td>
+
+
+                                <td>
+                                    <span class="order-status delivered">
+                                        Active
+                                    </span>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a
+                                            href="add-product.html?edit=5"
+                                            class="table-action-btn"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <path d="M12 20h9"></path>
+                                                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                                            </svg>
+
+                                        </a>
+
+                                        <button
+                                            type="button"
+                                            class="table-action-btn product-delete-btn"
+                                            data-product="Minimal Table Lamp"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                                <path d="M19 6l-1 14H6L5 6"></path>
+                                                <path d="M10 11v5"></path>
+                                                <path d="M14 11v5"></path>
+                                                <path d="M9 6V3h6v3"></path>
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- PRODUCT 6 -->
+                            <tr
+                                class="vendor-product-row"
+                                data-name="Performance Running Shoes"
+                                data-category="sports"
+                                data-status="draft"
+                                data-price="119"
+                                data-stock="22"
+                            >
+
+                                <td>
+                                    <label class="table-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            class="product-checkbox"
+                                        >
+                                        <span></span>
+                                    </label>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-product">
+
+                                        <div class="table-product-image">
+
+                                            <img
+                                                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=160&q=80"
+                                                alt="Running Shoes"
+                                            >
+
+                                        </div>
+
+                                        <div class="table-product-info">
+
+                                            <strong>
+                                                Performance Running Shoes
+                                            </strong>
+
+                                            <span>
+                                                SKU: MH-RS-006
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Sports
+                                </td>
+
+
+                                <td>
+                                    <strong>$119.00</strong>
+                                </td>
+
+
+                                <td>
+                                    <span class="stock-good">
+                                        22
+                                    </span>
+                                </td>
+
+
+                                <td>
+                                    52
+                                </td>
+
+
+                                <td>
+                                    <span class="order-status pending">
+                                        Draft
+                                    </span>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a
+                                            href="add-product.html?edit=6"
+                                            class="table-action-btn"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <path d="M12 20h9"></path>
+                                                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                                            </svg>
+
+                                        </a>
+
+                                        <button
+                                            type="button"
+                                            class="table-action-btn product-delete-btn"
+                                            data-product="Performance Running Shoes"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                                <path d="M19 6l-1 14H6L5 6"></path>
+                                                <path d="M10 11v5"></path>
+                                                <path d="M14 11v5"></path>
+                                                <path d="M9 6V3h6v3"></path>
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- PRODUCT 7 -->
+                            <tr
+                                class="vendor-product-row"
+                                data-name="Smart Home Speaker"
+                                data-category="electronics"
+                                data-status="out-stock"
+                                data-price="99"
+                                data-stock="0"
+                            >
+
+                                <td>
+                                    <label class="table-checkbox">
+                                        <input
+                                            type="checkbox"
+                                            class="product-checkbox"
+                                        >
+                                        <span></span>
+                                    </label>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-product">
+
+                                        <div class="table-product-image">
+
+                                            <img
+                                                src="https://images.unsplash.com/photo-1589492477829-5e65395b66cc?auto=format&fit=crop&w=160&q=80"
+                                                alt="Smart Home Speaker"
+                                            >
+
+                                        </div>
+
+                                        <div class="table-product-info">
+
+                                            <strong>
+                                                Smart Home Speaker
+                                            </strong>
+
+                                            <span>
+                                                SKU: MH-SH-007
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Electronics
+                                </td>
+
+
+                                <td>
+                                    <strong>$99.00</strong>
+                                </td>
+
+
+                                <td>
+                                    <span class="stock-critical">
+                                        0
+                                    </span>
+                                </td>
+
+
+                                <td>
+                                    41
+                                </td>
+
+
+                                <td>
+                                    <span class="order-status cancelled">
+                                        Out of Stock
+                                    </span>
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a
+                                            href="add-product.html?edit=7"
+                                            class="table-action-btn"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <path d="M12 20h9"></path>
+                                                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                                            </svg>
+
+                                        </a>
+
+                                        <button
+                                            type="button"
+                                            class="table-action-btn product-delete-btn"
+                                            data-product="Smart Home Speaker"
+                                        >
+
+                                            <svg width="17" height="17"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2">
+                                                <polyline points="3 6 5 6 21 6"></polyline>
+                                                <path d="M19 6l-1 14H6L5 6"></path>
+                                                <path d="M10 11v5"></path>
+                                                <path d="M14 11v5"></path>
+                                                <path d="M9 6V3h6v3"></path>
+                                            </svg>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- EMPTY SEARCH STATE -->
+                <div
+                    class="products-empty-state"
+                    id="vendorProductsEmpty"
+                    hidden
+                >
+
+                    <div class="empty-state-icon">
+
+                        <svg width="30" height="30"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+                        </svg>
+
+                    </div>
+
+                    <h3>
+                        No products found
+                    </h3>
+
+                    <p>
+                        Try changing your search or filter.
+                    </p>
+
+                </div>
+
+
+                <!-- PAGINATION -->
+                <div class="products-pagination">
+
+                    <span class="pagination-info">
+                        Showing 1–7 of 148 products
+                    </span>
+
+
+                    <div class="pagination-buttons">
+
+                        <button
+                            type="button"
+                            class="pagination-btn"
+                            disabled
+                        >
+                            <svg width="16" height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="pagination-btn active"
+                        >
+                            1
+                        </button>
+
+                        <button
+                            type="button"
+                            class="pagination-btn"
+                        >
+                            2
+                        </button>
+
+                        <button
+                            type="button"
+                            class="pagination-btn"
+                        >
+                            3
+                        </button>
+
+                        <span class="pagination-dots">
+                            ...
+                        </span>
+
+                        <button
+                            type="button"
+                            class="pagination-btn"
+                        >
+                            22
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="pagination-btn"
+                        >
+                            <svg width="16" height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BULK ACTIONS -->
+            <section
+                class="dashboard-panel bulk-actions-panel"
+                id="bulkActionsPanel"
+                hidden
+            >
+
+                <div>
+
+                    <strong>
+                        Products selected
+                    </strong>
+
+                    <span id="selectedProductCount">
+                        0 selected
+                    </span>
+
+                </div>
+
+
+                <div class="bulk-actions">
+
+                    <button
+                        type="button"
+                        class="secondary-btn"
+                        id="bulkActivateBtn"
+                    >
+                        Activate
+                    </button>
+
+                    <button
+                        type="button"
+                        class="secondary-btn"
+                        id="bulkDeactivateBtn"
+                    >
+                        Deactivate
+                    </button>
+
+                    <button
+                        type="button"
+                        class="danger-btn"
+                        id="bulkDeleteBtn"
+                    >
+                        Delete Selected
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- DELETE MODAL -->
+    <div
+        class="dashboard-modal"
+        id="productDeleteModal"
+    >
+
+        <div class="dashboard-modal-card">
+
+            <div class="modal-icon">
+
+                <svg width="24" height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
+                    <polyline points="3 6 5 6 21 6"></polyline>
+                    <path d="M19 6l-1 14H6L5 6"></path>
+                    <path d="M10 11v5"></path>
+                    <path d="M14 11v5"></path>
+                    <path d="M9 6V3h6v3"></path>
+                </svg>
+
+            </div>
+
+            <h3>
+                Delete Product?
+            </h3>
+
+            <p id="deleteProductMessage">
+                This product will be removed from your store.
+            </p>
+
+            <div class="modal-actions">
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="cancelProductDelete"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="button"
+                    class="danger-btn"
+                    id="confirmProductDelete"
+                >
+                    Delete Product
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- NOTIFICATION PANEL -->
+    <div
+        class="dashboard-notification-panel"
+        id="notificationPanel"
+    >
+
+        <div class="notification-panel-header">
+
+            <div>
+
+                <h3>
+                    Notifications
+                </h3>
+
+                <span>
+                    3 new notifications
+                </span>
+
+            </div>
+
+            <button
+                type="button"
+                id="closeNotificationPanel"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="notification-list">
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <strong>
+                        Product approved
+                    </strong>
+
+                    <p>
+                        Your latest product has been approved.
+                    </p>
+
+                    <span>
+                        12 min ago
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+                    +
+                </div>
+
+                <div>
+
+                    <strong>
+                        New order received
+                    </strong>
+
+                    <p>
+                        You received a new order worth $159.
+                    </p>
+
+                    <span>
+                        38 min ago
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="notification-item">
+
+                <div class="notification-item-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <strong>
+                        Low stock alert
+                    </strong>
+
+                    <p>
+                        3 products are running low on stock.
+                    </p>
+
+                    <span>
+                        1 hour ago
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

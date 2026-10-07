@@ -1,0 +1,2733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Orders | MarketHub Seller Center</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="seller-page">
+
+  <!-- =========================================
+       MOBILE HEADER
+  ========================================== -->
+  <header class="seller-mobile-header">
+
+    <button
+      class="icon-btn seller-menu-btn"
+      id="mobileSidebarToggle"
+      type="button"
+      aria-label="Open sidebar"
+    >
+      <svg viewBox="0 0 24 24" fill="none">
+        <path
+          d="M4 6H20M4 12H20M4 18H20"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
+
+    <a href="../index.html" class="seller-mobile-logo">
+      Market<span>Hub</span>
+    </a>
+
+    <button
+      class="icon-btn"
+      id="notificationBtn"
+      type="button"
+      aria-label="Notifications"
+    >
+      <svg viewBox="0 0 24 24" fill="none">
+        <path
+          d="M18 8C18 5.79 16.21 4 14 4H10C7.79 4 6 5.79 6 8V12.5C6 13.45 5.62 14.36 4.95 15.03L4 16H20L19.05 15.03C18.38 14.36 18 13.45 18 12.5V8Z"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M9 19C9.7 19.67 10.67 20 12 20C13.33 20 14.3 19.67 15 19"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        />
+      </svg>
+
+      <span class="notification-dot"></span>
+    </button>
+
+  </header>
+
+
+  <!-- =========================================
+       SIDEBAR OVERLAY
+  ========================================== -->
+  <div
+    class="dashboard-sidebar-overlay"
+    id="dashboardSidebarOverlay"
+  ></div>
+
+
+  <!-- =========================================
+       SELLER SIDEBAR
+  ========================================== -->
+  <aside
+    class="dashboard-sidebar"
+    id="dashboardSidebar"
+  >
+
+    <!-- BRAND -->
+    <div class="dashboard-brand">
+
+      <a href="../index.html" class="dashboard-logo">
+        Market<span>Hub</span>
+      </a>
+
+      <p>Seller Center</p>
+
+    </div>
+
+
+    <!-- SELLER PROFILE -->
+    <div class="seller-profile-mini">
+
+      <div class="seller-avatar">
+        <img
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&q=80"
+          alt="Seller profile"
+        >
+      </div>
+
+      <div class="seller-profile-info">
+        <strong>Alex Morgan</strong>
+        <span>Verified Seller</span>
+      </div>
+
+      <span class="verified-badge">
+
+        <svg viewBox="0 0 24 24" fill="none">
+          <path
+            d="M12 3L14.7 4.1L17.6 4.3L18.9 6.8L21 8.7L20.3 11.5L21 14.3L18.9 16.2L17.6 18.7L14.7 18.9L12 20L9.3 18.9L6.4 18.7L5.1 16.2L3 14.3L3.7 11.5L3 8.7L5.1 6.8L6.4 4.3L9.3 4.1L12 3Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M8.5 12L10.8 14.2L15.7 9.4"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+      </span>
+
+    </div>
+
+
+    <!-- SIDEBAR NAV -->
+    <nav class="dashboard-nav">
+
+      <p class="dashboard-nav-label">
+        MAIN MENU
+      </p>
+
+
+      <!-- DASHBOARD -->
+      <a
+        href="dashboard.html"
+        class="dashboard-nav-item"
+      >
+
+        <span class="dashboard-nav-icon">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect
+              x="4"
+              y="4"
+              width="6"
+              height="6"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <rect
+              x="14"
+              y="4"
+              width="6"
+              height="6"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <rect
+              x="4"
+              y="14"
+              width="6"
+              height="6"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <rect
+              x="14"
+              y="14"
+              width="6"
+              height="6"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+          </svg>
+
+        </span>
+
+        <span>Dashboard</span>
+
+      </a>
+
+
+      <!-- PRODUCTS -->
+      <a
+        href="products.html"
+        class="dashboard-nav-item"
+      >
+
+        <span class="dashboard-nav-icon">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M4 7.5L12 3L20 7.5V16.5L12 21L4 16.5V7.5Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4.5 7.5L12 12L19.5 7.5M12 12V20.5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+        </span>
+
+        <span>Products</span>
+
+      </a>
+
+
+      <!-- ADD PRODUCT -->
+      <a
+        href="add-product.html"
+        class="dashboard-nav-item"
+      >
+
+        <span class="dashboard-nav-icon">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle
+              cx="12"
+              cy="12"
+              r="8"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M12 8V16M8 12H16"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+
+        </span>
+
+        <span>Add Product</span>
+
+      </a>
+
+
+      <!-- ORDERS -->
+      <a
+        href="orders.html"
+        class="dashboard-nav-item active"
+      >
+
+        <span class="dashboard-nav-icon">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 7H19V20H5V7Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8 7V5.5C8 4.67 8.67 4 9.5 4H14.5C15.33 4 16 4.67 16 5.5V7"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M8 11H16M8 15H13"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+
+        </span>
+
+        <span>Orders</span>
+
+        <span class="dashboard-nav-count">
+          8
+        </span>
+
+      </a>
+
+
+      <!-- ANALYTICS -->
+      <a
+        href="analytics.html"
+        class="dashboard-nav-item"
+      >
+
+        <span class="dashboard-nav-icon">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 19V10"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <path
+              d="M12 19V5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <path
+              d="M19 19V13"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+
+        </span>
+
+        <span>Analytics</span>
+
+      </a>
+
+
+      <!-- EARNINGS -->
+      <a
+        href="earnings.html"
+        class="dashboard-nav-item"
+      >
+
+        <span class="dashboard-nav-icon">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect
+              x="4"
+              y="6"
+              width="16"
+              height="13"
+              rx="2"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+            <path
+              d="M8 6V4H16V6"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <circle
+              cx="12"
+              cy="12.5"
+              r="2.5"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+          </svg>
+
+        </span>
+
+        <span>Earnings</span>
+
+      </a>
+
+
+      <p class="dashboard-nav-label dashboard-nav-label-spaced">
+        ACCOUNT
+      </p>
+
+
+      <!-- VISIT STORE -->
+      <a
+        href="../index.html"
+        class="dashboard-nav-item"
+      >
+
+        <span class="dashboard-nav-icon">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M4 11.5L12 4L20 11.5V20H4V11.5Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9 20V14H15V20"
+              stroke="currentColor"
+              stroke-width="1.8"
+            />
+          </svg>
+
+        </span>
+
+        <span>Visit Store</span>
+
+      </a>
+
+
+      <!-- LOGOUT -->
+      <button
+        type="button"
+        class="dashboard-nav-item dashboard-logout-btn"
+        id="sellerLogoutBtn"
+      >
+
+        <span class="dashboard-nav-icon">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M10 5H6C4.9 5 4 5.9 4 7V17C4 18.1 4.9 19 6 19H10"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <path
+              d="M14 8L18 12L14 16"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 12H9"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+
+        </span>
+
+        <span>Logout</span>
+
+      </button>
+
+    </nav>
+
+
+    <!-- SIDEBAR HELP -->
+    <div class="seller-sidebar-help">
+
+      <div class="seller-help-icon">
+
+        <svg viewBox="0 0 24 24" fill="none">
+          <circle
+            cx="12"
+            cy="12"
+            r="8"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+          <path
+            d="M9.8 9.2C10.1 8.3 10.9 7.8 12 7.8C13.3 7.8 14.2 8.6 14.2 9.8C14.2 11.1 13.2 11.6 12.5 12.2C11.9 12.7 11.7 13.2 11.7 14"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+          />
+          <circle
+            cx="11.8"
+            cy="16.6"
+            r="0.8"
+            fill="currentColor"
+          />
+        </svg>
+
+      </div>
+
+      <div>
+        <strong>Need help?</strong>
+        <p>Contact seller support</p>
+      </div>
+
+      <button
+        type="button"
+        class="seller-help-btn"
+      >
+        →
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- =========================================
+       MAIN CONTENT
+  ========================================== -->
+  <main class="dashboard-main">
+
+
+    <!-- TOP BAR -->
+    <div class="dashboard-topbar">
+
+      <div>
+
+        <p class="dashboard-breadcrumb">
+          Seller Center / Orders
+        </p>
+
+        <h1 class="dashboard-page-title">
+          Orders
+        </h1>
+
+        <p class="dashboard-page-subtitle">
+          Manage and track all your customer orders.
+        </p>
+
+      </div>
+
+
+      <div class="dashboard-top-actions">
+
+        <button
+          type="button"
+          class="dashboard-top-icon"
+          id="notificationBtnDesktop"
+          aria-label="Notifications"
+        >
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M18 8C18 5.79 16.21 4 14 4H10C7.79 4 6 5.79 6 8V12.5C6 13.45 5.62 14.36 4.95 15.03L4 16H20L19.05 15.03C18.38 14.36 18 13.45 18 12.5V8Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9 19C9.7 19.67 10.67 20 12 20C13.33 20 14.3 19.67 15 19"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <span class="notification-dot"></span>
+
+        </button>
+
+
+        <div class="dashboard-user-menu">
+
+          <img
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&q=80"
+            alt="Alex Morgan"
+          >
+
+          <div>
+            <strong>Alex Morgan</strong>
+            <span>Seller</span>
+          </div>
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M7 10L12 15L17 10"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================================
+         ORDER STATISTICS
+    ========================================== -->
+    <section class="dashboard-stat-grid order-stat-grid">
+
+
+      <!-- TOTAL ORDERS -->
+      <div class="dashboard-stat-card">
+
+        <div class="dashboard-stat-top">
+
+          <span class="dashboard-stat-icon blue">
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 7H19V20H5V7Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 7V5.5C8 4.67 8.67 4 9.5 4H14.5C15.33 4 16 4.67 16 5.5V7"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+
+          </span>
+
+          <span class="stat-change positive">
+            +12.5%
+          </span>
+
+        </div>
+
+        <p>Total Orders</p>
+
+        <h2>1,284</h2>
+
+        <span class="stat-period">
+          Compared to last month
+        </span>
+
+      </div>
+
+
+      <!-- PENDING -->
+      <div class="dashboard-stat-card">
+
+        <div class="dashboard-stat-top">
+
+          <span class="dashboard-stat-icon purple">
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle
+                cx="12"
+                cy="12"
+                r="8"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M12 8V12L15 14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+          </span>
+
+          <span class="stat-change positive">
+            +8.2%
+          </span>
+
+        </div>
+
+        <p>Pending</p>
+
+        <h2>24</h2>
+
+        <span class="stat-period">
+          Need your attention
+        </span>
+
+      </div>
+
+
+      <!-- PROCESSING -->
+      <div class="dashboard-stat-card">
+
+        <div class="dashboard-stat-top">
+
+          <span class="dashboard-stat-icon cyan">
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M4 7H15V17H4V7Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M15 10H18L20 13V17H15V10Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <circle
+                cx="8"
+                cy="17"
+                r="2"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <circle
+                cx="17"
+                cy="17"
+                r="2"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+
+          </span>
+
+          <span class="stat-change positive">
+            +5.4%
+          </span>
+
+        </div>
+
+        <p>Processing</p>
+
+        <h2>38</h2>
+
+        <span class="stat-period">
+          Currently preparing
+        </span>
+
+      </div>
+
+
+      <!-- DELIVERED -->
+      <div class="dashboard-stat-card">
+
+        <div class="dashboard-stat-top">
+
+          <span class="dashboard-stat-icon green">
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 12.5L9.2 16.5L19 7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+          </span>
+
+          <span class="stat-change positive">
+            +14.8%
+          </span>
+
+        </div>
+
+        <p>Delivered</p>
+
+        <h2>1,154</h2>
+
+        <span class="stat-period">
+          Successfully completed
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         ORDERS PANEL
+    ========================================== -->
+    <section class="orders-section dashboard-panel">
+
+
+      <!-- ORDERS TOOLBAR -->
+      <div class="orders-toolbar">
+
+
+        <!-- STATUS TABS -->
+        <div class="orders-tabs">
+
+          <button
+            type="button"
+            class="order-tab active"
+            data-status="all"
+          >
+            All Orders
+            <span>1284</span>
+          </button>
+
+          <button
+            type="button"
+            class="order-tab"
+            data-status="pending"
+          >
+            Pending
+            <span>24</span>
+          </button>
+
+          <button
+            type="button"
+            class="order-tab"
+            data-status="processing"
+          >
+            Processing
+            <span>38</span>
+          </button>
+
+          <button
+            type="button"
+            class="order-tab"
+            data-status="shipped"
+          >
+            Shipped
+            <span>68</span>
+          </button>
+
+          <button
+            type="button"
+            class="order-tab"
+            data-status="delivered"
+          >
+            Delivered
+            <span>1154</span>
+          </button>
+
+          <button
+            type="button"
+            class="order-tab"
+            data-status="cancelled"
+          >
+            Cancelled
+            <span>16</span>
+          </button>
+
+        </div>
+
+
+        <!-- SEARCH / FILTER -->
+        <div class="orders-actions">
+
+          <div class="orders-search">
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle
+                cx="11"
+                cy="11"
+                r="6.5"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M16 16L20 20"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <input
+              type="search"
+              id="orderSearch"
+              placeholder="Search order..."
+              autocomplete="off"
+            >
+
+          </div>
+
+
+          <select
+            id="orderDateFilter"
+            class="orders-filter"
+          >
+            <option value="all">
+              All Dates
+            </option>
+
+            <option value="today">
+              Today
+            </option>
+
+            <option value="week">
+              This Week
+            </option>
+
+            <option value="month">
+              This Month
+            </option>
+          </select>
+
+
+          <button
+            type="button"
+            class="orders-filter-btn"
+            id="advancedFilterBtn"
+          >
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M4 6H20M7 12H17M10 18H14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            Filters
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================================
+           ORDERS TABLE
+      ========================================== -->
+      <div class="orders-table-wrap">
+
+        <table class="orders-table">
+
+          <thead>
+
+            <tr>
+
+              <th>
+                <input
+                  type="checkbox"
+                  id="selectAllOrders"
+                  aria-label="Select all orders"
+                >
+              </th>
+
+              <th>Order</th>
+
+              <th>Customer</th>
+
+              <th>Products</th>
+
+              <th>Date</th>
+
+              <th>Total</th>
+
+              <th>Payment</th>
+
+              <th>Status</th>
+
+              <th>Action</th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody id="ordersTableBody">
+
+
+            <!-- =================================
+                 ORDER 01
+            ================================== -->
+            <tr
+              data-status="pending"
+              data-order-id="MH-10482"
+            >
+
+              <td>
+                <input
+                  type="checkbox"
+                  class="order-checkbox"
+                  aria-label="Select order MH-10482"
+                >
+              </td>
+
+              <td>
+                <button
+                  type="button"
+                  class="order-id-btn"
+                  data-order="MH-10482"
+                >
+                  #MH-10482
+                </button>
+              </td>
+
+              <td>
+
+                <div class="customer-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                    alt="Sarah Wilson"
+                  >
+
+                  <div>
+                    <strong>Sarah Wilson</strong>
+                    <span>sarah@example.com</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+
+                <div class="order-product-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=120&q=80"
+                    alt="Urban Runner Pro"
+                  >
+
+                  <div>
+                    <strong>Urban Runner Pro</strong>
+                    <span>+ 2 more items</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <span class="order-date">
+                  Oct 02, 2026
+                </span>
+                <small>
+                  10:42 AM
+                </small>
+              </td>
+
+              <td>
+                <strong class="order-total">
+                  $184.00
+                </strong>
+              </td>
+
+              <td>
+                <span class="payment-badge paid">
+                  Paid
+                </span>
+              </td>
+
+              <td>
+                <span class="order-status pending">
+                  Pending
+                </span>
+              </td>
+
+              <td>
+
+                <button
+                  type="button"
+                  class="table-action-btn"
+                  data-order="MH-10482"
+                  aria-label="View order MH-10482"
+                >
+
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M2.5 12S6 5.5 12 5.5S21.5 12 21.5 12S18 18.5 12 18.5S2.5 12 2.5 12Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                  </svg>
+
+                </button>
+
+              </td>
+
+            </tr>
+
+
+            <!-- =================================
+                 ORDER 02
+            ================================== -->
+            <tr
+              data-status="processing"
+              data-order-id="MH-10481"
+            >
+
+              <td>
+                <input
+                  type="checkbox"
+                  class="order-checkbox"
+                  aria-label="Select order MH-10481"
+                >
+              </td>
+
+              <td>
+                <button
+                  type="button"
+                  class="order-id-btn"
+                  data-order="MH-10481"
+                >
+                  #MH-10481
+                </button>
+              </td>
+
+              <td>
+
+                <div class="customer-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
+                    alt="Daniel Carter"
+                  >
+
+                  <div>
+                    <strong>Daniel Carter</strong>
+                    <span>daniel@example.com</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+
+                <div class="order-product-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=120&q=80"
+                    alt="Chrono X Smartwatch"
+                  >
+
+                  <div>
+                    <strong>Chrono X Smartwatch</strong>
+                    <span>+ 1 more item</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <span class="order-date">
+                  Oct 02, 2026
+                </span>
+                <small>
+                  09:18 AM
+                </small>
+              </td>
+
+              <td>
+                <strong class="order-total">
+                  $249.00
+                </strong>
+              </td>
+
+              <td>
+                <span class="payment-badge paid">
+                  Paid
+                </span>
+              </td>
+
+              <td>
+                <span class="order-status processing">
+                  Processing
+                </span>
+              </td>
+
+              <td>
+
+                <button
+                  type="button"
+                  class="table-action-btn"
+                  data-order="MH-10481"
+                  aria-label="View order MH-10481"
+                >
+
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M2.5 12S6 5.5 12 5.5S21.5 12 21.5 12S18 18.5 12 18.5S2.5 12 2.5 12Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                  </svg>
+
+                </button>
+
+              </td>
+
+            </tr>
+
+
+            <!-- =================================
+                 ORDER 03
+            ================================== -->
+            <tr
+              data-status="shipped"
+              data-order-id="MH-10480"
+            >
+
+              <td>
+                <input
+                  type="checkbox"
+                  class="order-checkbox"
+                  aria-label="Select order MH-10480"
+                >
+              </td>
+
+              <td>
+                <button
+                  type="button"
+                  class="order-id-btn"
+                  data-order="MH-10480"
+                >
+                  #MH-10480
+                </button>
+              </td>
+
+              <td>
+
+                <div class="customer-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                    alt="Emily Davis"
+                  >
+
+                  <div>
+                    <strong>Emily Davis</strong>
+                    <span>emily@example.com</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+
+                <div class="order-product-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=120&q=80"
+                    alt="AirSound Pro"
+                  >
+
+                  <div>
+                    <strong>AirSound Pro</strong>
+                    <span>+ 1 more item</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <span class="order-date">
+                  Oct 01, 2026
+                </span>
+                <small>
+                  04:35 PM
+                </small>
+              </td>
+
+              <td>
+                <strong class="order-total">
+                  $129.00
+                </strong>
+              </td>
+
+              <td>
+                <span class="payment-badge paid">
+                  Paid
+                </span>
+              </td>
+
+              <td>
+                <span class="order-status shipped">
+                  Shipped
+                </span>
+              </td>
+
+              <td>
+
+                <button
+                  type="button"
+                  class="table-action-btn"
+                  data-order="MH-10480"
+                  aria-label="View order MH-10480"
+                >
+
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M2.5 12S6 5.5 12 5.5S21.5 12 21.5 12S18 18.5 12 18.5S2.5 12 2.5 12Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                  </svg>
+
+                </button>
+
+              </td>
+
+            </tr>
+
+
+            <!-- =================================
+                 ORDER 04
+            ================================== -->
+            <tr
+              data-status="delivered"
+              data-order-id="MH-10479"
+            >
+
+              <td>
+                <input
+                  type="checkbox"
+                  class="order-checkbox"
+                  aria-label="Select order MH-10479"
+                >
+              </td>
+
+              <td>
+                <button
+                  type="button"
+                  class="order-id-btn"
+                  data-order="MH-10479"
+                >
+                  #MH-10479
+                </button>
+              </td>
+
+              <td>
+
+                <div class="customer-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                    alt="Olivia Miller"
+                  >
+
+                  <div>
+                    <strong>Olivia Miller</strong>
+                    <span>olivia@example.com</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+
+                <div class="order-product-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=120&q=80"
+                    alt="Metro Leather Bag"
+                  >
+
+                  <div>
+                    <strong>Metro Leather Bag</strong>
+                    <span>1 item</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <span class="order-date">
+                  Sep 30, 2026
+                </span>
+                <small>
+                  02:12 PM
+                </small>
+              </td>
+
+              <td>
+                <strong class="order-total">
+                  $164.00
+                </strong>
+              </td>
+
+              <td>
+                <span class="payment-badge paid">
+                  Paid
+                </span>
+              </td>
+
+              <td>
+                <span class="order-status delivered">
+                  Delivered
+                </span>
+              </td>
+
+              <td>
+
+                <button
+                  type="button"
+                  class="table-action-btn"
+                  data-order="MH-10479"
+                  aria-label="View order MH-10479"
+                >
+
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M2.5 12S6 5.5 12 5.5S21.5 12 21.5 12S18 18.5 12 18.5S2.5 12 2.5 12Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                  </svg>
+
+                </button>
+
+              </td>
+
+            </tr>
+
+
+            <!-- =================================
+                 ORDER 05
+            ================================== -->
+            <tr
+              data-status="pending"
+              data-order-id="MH-10478"
+            >
+
+              <td>
+                <input
+                  type="checkbox"
+                  class="order-checkbox"
+                  aria-label="Select order MH-10478"
+                >
+              </td>
+
+              <td>
+                <button
+                  type="button"
+                  class="order-id-btn"
+                  data-order="MH-10478"
+                >
+                  #MH-10478
+                </button>
+              </td>
+
+              <td>
+
+                <div class="customer-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+                    alt="Sophia Brown"
+                  >
+
+                  <div>
+                    <strong>Sophia Brown</strong>
+                    <span>sophia@example.com</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+
+                <div class="order-product-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=120&q=80"
+                    alt="Essential Overshirt"
+                  >
+
+                  <div>
+                    <strong>Essential Overshirt</strong>
+                    <span>+ 2 more items</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <span class="order-date">
+                  Sep 30, 2026
+                </span>
+                <small>
+                  11:08 AM
+                </small>
+              </td>
+
+              <td>
+                <strong class="order-total">
+                  $212.00
+                </strong>
+              </td>
+
+              <td>
+                <span class="payment-badge pending">
+                  Pending
+                </span>
+              </td>
+
+              <td>
+                <span class="order-status pending">
+                  Pending
+                </span>
+              </td>
+
+              <td>
+
+                <button
+                  type="button"
+                  class="table-action-btn"
+                  data-order="MH-10478"
+                  aria-label="View order MH-10478"
+                >
+
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M2.5 12S6 5.5 12 5.5S21.5 12 21.5 12S18 18.5 12 18.5S2.5 12 2.5 12Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                  </svg>
+
+                </button>
+
+              </td>
+
+            </tr>
+
+
+            <!-- =================================
+                 ORDER 06
+            ================================== -->
+            <tr
+              data-status="cancelled"
+              data-order-id="MH-10477"
+            >
+
+              <td>
+                <input
+                  type="checkbox"
+                  class="order-checkbox"
+                  aria-label="Select order MH-10477"
+                >
+              </td>
+
+              <td>
+                <button
+                  type="button"
+                  class="order-id-btn"
+                  data-order="MH-10477"
+                >
+                  #MH-10477
+                </button>
+              </td>
+
+              <td>
+
+                <div class="customer-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                    alt="James Anderson"
+                  >
+
+                  <div>
+                    <strong>James Anderson</strong>
+                    <span>james@example.com</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+
+                <div class="order-product-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=120&q=80"
+                    alt="Street Flex Sneakers"
+                  >
+
+                  <div>
+                    <strong>Street Flex Sneakers</strong>
+                    <span>1 item</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <span class="order-date">
+                  Sep 29, 2026
+                </span>
+                <small>
+                  06:20 PM
+                </small>
+              </td>
+
+              <td>
+                <strong class="order-total">
+                  $96.00
+                </strong>
+              </td>
+
+              <td>
+                <span class="payment-badge refunded">
+                  Refunded
+                </span>
+              </td>
+
+              <td>
+                <span class="order-status cancelled">
+                  Cancelled
+                </span>
+              </td>
+
+              <td>
+
+                <button
+                  type="button"
+                  class="table-action-btn"
+                  data-order="MH-10477"
+                  aria-label="View order MH-10477"
+                >
+
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M2.5 12S6 5.5 12 5.5S21.5 12 21.5 12S18 18.5 12 18.5S2.5 12 2.5 12Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                  </svg>
+
+                </button>
+
+              </td>
+
+            </tr>
+
+
+            <!-- =================================
+                 ORDER 07
+            ================================== -->
+            <tr
+              data-status="delivered"
+              data-order-id="MH-10476"
+            >
+
+              <td>
+                <input
+                  type="checkbox"
+                  class="order-checkbox"
+                  aria-label="Select order MH-10476"
+                >
+              </td>
+
+              <td>
+                <button
+                  type="button"
+                  class="order-id-btn"
+                  data-order="MH-10476"
+                >
+                  #MH-10476
+                </button>
+              </td>
+
+              <td>
+
+                <div class="customer-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=100&q=80"
+                    alt="Michael Taylor"
+                  >
+
+                  <div>
+                    <strong>Michael Taylor</strong>
+                    <span>michael@example.com</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+
+                <div class="order-product-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1593642532400-2682810df593?auto=format&fit=crop&w=120&q=80"
+                    alt="UltraBook Air 14"
+                  >
+
+                  <div>
+                    <strong>UltraBook Air 14</strong>
+                    <span>1 item</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <span class="order-date">
+                  Sep 28, 2026
+                </span>
+                <small>
+                  01:45 PM
+                </small>
+              </td>
+
+              <td>
+                <strong class="order-total">
+                  $899.00
+                </strong>
+              </td>
+
+              <td>
+                <span class="payment-badge paid">
+                  Paid
+                </span>
+              </td>
+
+              <td>
+                <span class="order-status delivered">
+                  Delivered
+                </span>
+              </td>
+
+              <td>
+
+                <button
+                  type="button"
+                  class="table-action-btn"
+                  data-order="MH-10476"
+                  aria-label="View order MH-10476"
+                >
+
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M2.5 12S6 5.5 12 5.5S21.5 12 21.5 12S18 18.5 12 18.5S2.5 12 2.5 12Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                  </svg>
+
+                </button>
+
+              </td>
+
+            </tr>
+
+
+            <!-- =================================
+                 ORDER 08
+            ================================== -->
+            <tr
+              data-status="processing"
+              data-order-id="MH-10475"
+            >
+
+              <td>
+                <input
+                  type="checkbox"
+                  class="order-checkbox"
+                  aria-label="Select order MH-10475"
+                >
+              </td>
+
+              <td>
+                <button
+                  type="button"
+                  class="order-id-btn"
+                  data-order="MH-10475"
+                >
+                  #MH-10475
+                </button>
+              </td>
+
+              <td>
+
+                <div class="customer-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=100&q=80"
+                    alt="Emma Johnson"
+                  >
+
+                  <div>
+                    <strong>Emma Johnson</strong>
+                    <span>emma@example.com</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+
+                <div class="order-product-cell">
+
+                  <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=120&q=80"
+                    alt="Classic Steel Watch"
+                  >
+
+                  <div>
+                    <strong>Classic Steel Watch</strong>
+                    <span>+ 1 more item</span>
+                  </div>
+
+                </div>
+
+              </td>
+
+              <td>
+                <span class="order-date">
+                  Sep 27, 2026
+                </span>
+                <small>
+                  10:30 AM
+                </small>
+              </td>
+
+              <td>
+                <strong class="order-total">
+                  $318.00
+                </strong>
+              </td>
+
+              <td>
+                <span class="payment-badge paid">
+                  Paid
+                </span>
+              </td>
+
+              <td>
+                <span class="order-status processing">
+                  Processing
+                </span>
+              </td>
+
+              <td>
+
+                <button
+                  type="button"
+                  class="table-action-btn"
+                  data-order="MH-10475"
+                  aria-label="View order MH-10475"
+                >
+
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M2.5 12S6 5.5 12 5.5S21.5 12 21.5 12S18 18.5 12 18.5S2.5 12 2.5 12Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                  </svg>
+
+                </button>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+
+        <!-- EMPTY STATE -->
+        <div
+          class="orders-empty-state"
+          id="ordersEmptyState"
+          hidden
+        >
+
+          <div class="orders-empty-icon">
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 7H19V20H5V7Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M8 7V5.5C8 4.67 8.67 4 9.5 4H14.5C15.33 4 16 4.67 16 5.5V7"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+
+          </div>
+
+          <h3>
+            No orders found
+          </h3>
+
+          <p>
+            Try changing your search or filter.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================================
+           TABLE FOOTER
+      ========================================== -->
+      <div class="orders-table-footer">
+
+        <div class="orders-selected-info">
+          <span id="selectedOrdersCount">0</span>
+          orders selected
+        </div>
+
+
+        <div class="orders-pagination">
+
+          <span class="pagination-info">
+            Showing
+            <strong>1–8</strong>
+            of
+            <strong>1,284</strong>
+          </span>
+
+
+          <button
+            type="button"
+            class="pagination-btn disabled"
+            aria-label="Previous page"
+          >
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="pagination-btn active"
+          >
+            1
+          </button>
+
+
+          <button
+            type="button"
+            class="pagination-btn"
+          >
+            2
+          </button>
+
+
+          <button
+            type="button"
+            class="pagination-btn"
+          >
+            3
+          </button>
+
+
+          <span class="pagination-dots">
+            ...
+          </span>
+
+
+          <button
+            type="button"
+            class="pagination-btn"
+          >
+            161
+          </button>
+
+
+          <button
+            type="button"
+            class="pagination-btn"
+            aria-label="Next page"
+          >
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         ORDER INSIGHTS
+    ========================================== -->
+    <section class="order-insight-grid">
+
+
+      <!-- FULFILLMENT -->
+      <div class="dashboard-panel order-insight-card">
+
+        <div class="panel-heading">
+
+          <div>
+            <h3>
+              Order Fulfillment
+            </h3>
+
+            <p>
+              This month's fulfillment performance
+            </p>
+          </div>
+
+          <a href="analytics.html">
+
+            View Analytics
+
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 12H19M13 6L19 12L13 18"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+          </a>
+
+        </div>
+
+
+        <div class="fulfillment-progress">
+
+          <div class="fulfillment-progress-top">
+
+            <span>
+              On-time delivery
+            </span>
+
+            <strong>
+              94.8%
+            </strong>
+
+          </div>
+
+
+          <div class="progress-track">
+
+            <div
+              class="progress-fill"
+              data-progress="94.8"
+            ></div>
+
+          </div>
+
+        </div>
+
+
+        <div class="fulfillment-mini-grid">
+
+          <div>
+
+            <span class="mini-dot green"></span>
+
+            <strong>
+              94.8%
+            </strong>
+
+            <small>
+              On Time
+            </small>
+
+          </div>
+
+
+          <div>
+
+            <span class="mini-dot yellow"></span>
+
+            <strong>
+              3.7%
+            </strong>
+
+            <small>
+              Delayed
+            </small>
+
+          </div>
+
+
+          <div>
+
+            <span class="mini-dot purple"></span>
+
+            <strong>
+              1.5%
+            </strong>
+
+            <small>
+              Cancelled
+            </small>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- TOP PRODUCT -->
+      <div class="dashboard-panel order-insight-card">
+
+        <div class="panel-heading">
+
+          <div>
+            <h3>
+              Top Selling Product
+            </h3>
+
+            <p>
+              Based on order volume
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="top-product-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80"
+            alt="AirSound Pro Headphones"
+          >
+
+          <div class="top-product-info">
+
+            <span class="product-rank">
+              #1 Best Seller
+            </span>
+
+            <h4>
+              AirSound Pro
+            </h4>
+
+            <p>
+              Wireless Noise-Cancelling Headphones
+            </p>
+
+
+            <div class="top-product-meta">
+
+              <strong>
+                $129.00
+              </strong>
+
+              <span>
+                286 orders
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================
+       ORDER DETAILS MODAL
+  ========================================== -->
+  <div
+    class="seller-modal"
+    id="orderDetailsModal"
+    hidden
+  >
+
+    <div
+      class="seller-modal-overlay"
+      data-close-order-modal
+    ></div>
+
+
+    <div class="seller-modal-card order-details-modal-card">
+
+
+      <!-- MODAL HEADER -->
+      <div class="seller-modal-header">
+
+        <div>
+
+          <span class="modal-eyebrow">
+            ORDER DETAILS
+          </span>
+
+          <h2 id="modalOrderNumber">
+            #MH-10482
+          </h2>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="modal-close-btn"
+          id="closeOrderDetails"
+          aria-label="Close order details"
+        >
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M6 6L18 18M18 6L6 18"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+
+        </button>
+
+      </div>
+
+
+      <!-- STATUS -->
+      <div class="order-modal-status-row">
+
+        <span class="order-status pending">
+          Pending
+        </span>
+
+        <span class="modal-order-date">
+          October 02, 2026 · 10:42 AM
+        </span>
+
+      </div>
+
+
+      <!-- MODAL BODY -->
+      <div class="order-modal-body">
+
+
+        <!-- CUSTOMER -->
+        <div class="order-modal-section">
+
+          <h3>
+            Customer
+          </h3>
+
+          <div class="modal-customer">
+
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+              alt="Sarah Wilson"
+            >
+
+            <div>
+
+              <strong>
+                Sarah Wilson
+              </strong>
+
+              <span>
+                sarah@example.com
+              </span>
+
+              <span>
+                +1 202 555 0188
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- SHIPPING ADDRESS -->
+        <div class="order-modal-section">
+
+          <h3>
+            Shipping Address
+          </h3>
+
+          <p class="modal-address">
+            245 Madison Avenue,<br>
+            New York, NY 10016,<br>
+            United States
+          </p>
+
+        </div>
+
+
+        <!-- ORDER ITEMS -->
+        <div class="order-modal-section">
+
+          <h3>
+            Items
+          </h3>
+
+
+          <div class="modal-order-item">
+
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=150&q=80"
+              alt="Urban Runner Pro"
+            >
+
+            <div>
+
+              <strong>
+                Urban Runner Pro
+              </strong>
+
+              <span>
+                Size: 42 · Black
+              </span>
+
+              <span>
+                Qty: 1
+              </span>
+
+            </div>
+
+            <strong>
+              $119.00
+            </strong>
+
+          </div>
+
+
+          <div class="modal-order-item">
+
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=150&q=80"
+              alt="Chrono Watch Strap"
+            >
+
+            <div>
+
+              <strong>
+                Chrono Watch Strap
+              </strong>
+
+              <span>
+                Color: Midnight
+              </span>
+
+              <span>
+                Qty: 1
+              </span>
+
+            </div>
+
+            <strong>
+              $65.00
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <!-- ORDER TOTAL -->
+        <div class="order-modal-total">
+
+          <div>
+            <span>
+              Subtotal
+            </span>
+
+            <strong>
+              $184.00
+            </strong>
+          </div>
+
+
+          <div>
+            <span>
+              Shipping
+            </span>
+
+            <strong>
+              $0.00
+            </strong>
+          </div>
+
+
+          <div class="total-final">
+
+            <span>
+              Total
+            </span>
+
+            <strong>
+              $184.00
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- MODAL FOOTER -->
+      <div class="seller-modal-footer">
+
+        <button
+          type="button"
+          class="secondary-dashboard-btn"
+          id="closeOrderDetailsFooter"
+        >
+          Close
+        </button>
+
+        <button
+          type="button"
+          class="primary-dashboard-btn"
+          id="processOrderBtn"
+        >
+          Process Order
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================================
+       NOTIFICATION PANEL
+  ========================================== -->
+  <aside
+    class="notification-panel"
+    id="notificationPanel"
+    hidden
+  >
+
+    <div class="notification-panel-header">
+
+      <div>
+
+        <span>
+          SELLER CENTER
+        </span>
+
+        <h3>
+          Notifications
+        </h3>
+
+      </div>
+
+
+      <button
+        type="button"
+        id="closeNotificationPanel"
+        aria-label="Close notifications"
+      >
+
+        <svg viewBox="0 0 24 24" fill="none">
+          <path
+            d="M6 6L18 18M18 6L6 18"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          />
+        </svg>
+
+      </button>
+
+    </div>
+
+
+    <div class="notification-list">
+
+
+      <!-- NOTIFICATION 01 -->
+      <div class="notification-item unread">
+
+        <div class="notification-item-icon blue">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 7H19V19H5V7Z"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+            <path
+              d="M8 7V5H16V7"
+              stroke="currentColor"
+              stroke-width="1.7"
+            />
+          </svg>
+
+        </div>
+
+        <div>
+
+          <strong>
+            New order received
+          </strong>
+
+          <p>
+            Order #MH-10482 needs your attention.
+          </p>
+
+          <span>
+            8 minutes ago
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- NOTIFICATION 02 -->
+      <div class="notification-item unread">
+
+        <div class="notification-item-icon green">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 12.5L9.2 16.5L19 7"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+        </div>
+
+        <div>
+
+          <strong>
+            Payment received
+          </strong>
+
+          <p>
+            $249 payment was successfully confirmed.
+          </p>
+
+          <span>
+            1 hour ago
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- NOTIFICATION 03 -->
+      <div class="notification-item">
+
+        <div class="notification-item-icon purple">
+
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 3V21M17 7H9.5C8.12 7 7 8.12 7 9.5S8.12 12 9.5 12H14.5C15.88 12 17 13.12 17 14.5S15.88 17 14.5 17H7"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+            />
+          </svg>
+
+        </div>
+
+        <div>
+
+          <strong>
+            Weekly earnings updated
+          </strong>
+
+          <p>
+            Your earnings report is now available.
+          </p>
+
+          <span>
+            Yesterday
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  <!-- =========================================
+       LOGOUT MODAL
+  ========================================== -->
+  <div
+    class="seller-modal"
+    id="logoutModal"
+    hidden
+  >
+
+    <div class="seller-modal-overlay"></div>
+
+
+    <div class="seller-modal-card small-modal">
+
+      <div class="logout-modal-icon">
+
+        <svg viewBox="0 0 24 24" fill="none">
+          <path
+            d="M10 5H6C4.9 5 4 5.9 4 7V17C4 18.1 4.9 19 6 19H10"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          />
+          <path
+            d="M14 8L18 12L14 16"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 12H9"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          />
+        </svg>
+
+      </div>
+
+
+      <h2>
+        Logout from Seller Center?
+      </h2>
+
+      <p>
+        You can sign back in anytime to manage your store.
+      </p>
+
+
+      <div class="logout-modal-actions">
+
+        <button
+          type="button"
+          class="secondary-dashboard-btn"
+          id="cancelLogout"
+        >
+          Cancel
+        </button>
+
+        <button
+          type="button"
+          class="danger-dashboard-btn"
+          id="confirmLogout"
+        >
+          Logout
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================================
+       MAIN JAVASCRIPT
+  ========================================== -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
